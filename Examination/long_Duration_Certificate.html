@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Project CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+		<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	
+   <title>Campus Management System</title>
+   </head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+			<div id="header">
+				<div class="row">
+					<div id="left_menu" class="col-sm-7 float-start">
+						<div id="image_logo" class="float-start">
+						<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+						</div>
+						<div class="float-start">
+							<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+						</div>
+					</div>
+					<div id="right_menu" class=" navbar-light float-end col-sm-5">
+						<div id="userNav">
+						
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								DG ADMIN
+							  </a>
+							  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Profile</a></li>
+								<li><a class="dropdown-item" href="#">Settings</a></li>
+								<li><a class="dropdown-item" href="#">Logout</a></li>
+							  </ul>
+							</li>
+							</ul>
+						</div>
+						<!--<p id="username">DG ADMIN</p> -->
+						<div id="image_user" class="float-end">
+						<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+			  <ul class="navbar-nav">
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Annual Work Plan</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Long Duration Class</a></li>
+					<li> <a class="dropdown-item" href="#">Short Duration Course</a></li>
+					<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+					<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HR</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">New Post</a></li>
+					<li> <a class="dropdown-item" href="#">Filled/Vacant Post</a></li>		
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trainee Enrolement</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Add a New Trainee</a></li>
+					<li> <a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+					<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+					<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">Attendance</a></li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Timetable</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Timetable &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Timetable</a></li>
+						<li><a class="dropdown-item" href="#">View Timetable</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Tentative Training Programme &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Tentative Training Programme</a></li>
+						<li><a class="dropdown-item" href="#">View Tentative Training Programme</a></li>
+						</ul>
+					</li>					
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Syllabus</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Direct AR & Inspector Syllabus</a></li>
+					<li> <a class="dropdown-item" href="#">Promottee AR & Inspector Syllabus</a></li>
+					<li><a class="dropdown-item" href="#">Direct Sub-Inspector Syllabus</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Examination</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Datesheet &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Datesheet</a></li>
+						<li><a class="dropdown-item" href="#">View Datesheet</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Result &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Upload Result</a></li>
+						<li><a class="dropdown-item" href="#">View Result</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Certificate &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Certificate</a></li>
+						<li><a class="dropdown-item" href="#">Download Certifictae</a></li>
+						</ul>
+					</li>	
+						
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Reports</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Monthly Report</a></li>
+					<li> <a class="dropdown-item" href="#">Annual Report</a></li>
+				  </ul>
+				</li>
+				
+			  </ul>
+			</div>
+			<!-- navbar-collapse.// -->
+			</div>
+			<!-- container-fluid.// -->
+		</nav>
+		
+		<div id="pageInfo">				
+			<div id="deptLogo" class="col-sm-4">
+				<img id="logoImg" src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+	
+		<div id="FormCertificate" class="col-lg-12">
+			<div class="row mb-3" id="buttonRow">
+				<div class="col-sm-12">
+					<button type="submit" onClick="window.print()" class="form-control btn-primary text-nowrap col-sm-2 col-md-1 float-end" id="printButton" value="print">Print</button>
+				</div>
+			</div>
+		
+			<div class="mx-auto" id="certificateDiv">
+				<div class="outer">
+					<div class="triangle-left"></div>
+					
+					<!-- Horizontal div at the top-->
+					<div class="box inner mx-auto">
+						<div class="outerRectangle float-start">
+							<div class="innerRectangle"></div>
+						</div>
+						<div class="horizontalBorderDiv float-start"></div>
+						<div class="outerRectangle float-start">
+							<div class="innerRectangle"></div>
+						</div>
+					</div>
+					<div class="float-none"></div>
+					
+					<!-- Left side div -->
+					<div class="leftSideDiv">
+						<div class="verticalLine1 float-start"></div>
+						<div class="verticalLine2 float-start"></div>
+					</div>
+					<div class="float-none"></div>
+			
+					
+		
+					<div class = "triangle-right"></div>
+		
+					<!-- Horizontal div at the bottom-->
+					<div class="boxBottom inner mx-auto">
+						<div class="outerRectangle float-start">
+							<div class="innerRectangle"></div>
+						</div>
+						<div class="horizontalBorderDiv float-start"></div>
+						<div class="outerRectangle float-start">
+							<div class="innerRectangle"></div>
+						</div>
+					</div>
+					
+					<div class="float-none"></div>
+					
+					<!-- Right side div -->
+					<div class="rightSideDiv">
+						<div class="verticalLineRight1 float-start"></div>
+						<div class="verticalLineRight2 float-start"></div>
+					</div>
+					<div class="float-none"></div>
+					
+					<div class="contentDiv">
+						<div class="mainHeader">
+							<div class="logoGovtCertificate float-start">
+								<img src="../images/Govt_punjab_logo-transparent.png" alt="" width="71" height="55">
+							</div>
+							<div class="headingContent me-3 float-start">
+								<h6 class="text-center heading">GOVERNMENT OF THE PUNJAB</h6>
+								<p class="text-center paraCertificate">REGIONAL COOPERATIVE TRAINING INSTITUTE<br>BAHAWALPUR</p>
+							</div>
+							<div class="float-start">
+								<img src="../images/Cooperatives_logo.png" alt="" width="56" height="60">
+							</div>
+							<div class="float-end"></div>
+						</div>
+						<div class="traineeDetails">
+							<div class="certifyDiv text-center mt-5">This is to certify that</div>
+							<div class="rowDiv mt-4">
+								<div class="labelName float-start mt-2">Mr/Miss/Mrs.</div>
+								<div class="InputDiv float-start"><input class="InputDiv valueInput text-center" type="text" value="Uzair Ahmad Saroya" readonly></input></div>
+								<div class="float-none"></div>
+							</div>
+							
+							<div class="rowDiv mt-4">
+								<div class="labelName float-start mt-2">Son/Daughter of</div>
+								<div class="InputDiv float-start"><input class="InputDiv valueInput text-center" value="Muhammad Afzal Saroya" readonly></input></div>
+								<div class="float-none"></div>
+							</div>
+							
+							<div class="rowDiv mt-4">
+								<div class="of float-start mt-2">of</div>
+								<div class="InputDistrict float-start"><input class="InputDistrict valueInput text-center" value="Sheikhupura" readonly></input></div>
+								<div class="textDistrict float-start mt-2">District has attended the</div>
+								<div class="clear-floating"></div>
+							</div>
+							
+							<div class="rowDiv mt-5">
+								<h5 class="text-center">Promottee AR & Inpector Class</h5>
+							</div>
+							
+							<div class="rowDiv mt-5">
+								<div class="inputSessionStart float-start me-1"><input class="inputSessionStart valueInput text-center" value="12/10/2020" readonly></input></div>
+								<div class="to float-start mt-2 me-1">to</div>
+								<div class="inputSessionEnd float-start me-1"><input class="inputSessionEnd valueInput text-center" value="11/04/2021" readonly></input></div>
+								<div class="description float-start mt-2">and passed the examination held at this college in</div>
+								<div class="clear-floating"></div>
+							</div>
+							
+							<div class="rowDiv mt-4 marginLeft">
+								<div class="examMonth me-1 float-start"><input class="examMonth valueInput text-center" value="05/2021" readonly></input></div>
+								<div class="description2 mt-2 float-start">in the following subjects</div>
+								<div class="clear-floating"></div>
+							</div>
+							
+							<div class="rowDiv mt-5">
+								<div class="subjectNames float-start">
+									<div>1.General Law</div>
+									<div>2.Accounting</div>
+									<div>3.Cooperative Book-Keeping</div>
+									<div>4.Cooperative Law</div>
+									<div>5.Cooperative Law & Practice</div>
+									<div>6.Businesses Management</div>
+									<div>7.Economic</div>
+									<div>8.Cooperation</div>
+									<div>9.Community Development</div>
+									<div>10.VIVA VOCE</div>
+								</div>
+								<div class="marksDiv float-start">
+									<div class="mt-5">
+										<div class="totalMarks float-start mt-2">Total Marks :</div>
+										<div class="inputTotalMarks float-start"><input class="inputTotalMarks valueInput text-center" value="900" readonly></input></div>
+										<div class="clear-floating"></div>
+										
+										<div class="obtainedMarks float-start mt-2">Obtained Marks :</div>
+										<div class="inputObtainMarks float-start"><input class="inputObtainMarks valueInput text-center" value="700" readonly></input></div>
+										<div class="clear-floating"></div>
+									</div>
+								</div>
+								<div class="clear-floating"></div>
+							</div>
+							<div class="rowDivSig hello">
+								<div class="uploadAreaViewCertificate float-end text-center"><img id="uploadResultCertificate" src="../images/signature.png" alt="" class="sigImageCertificate"></div>
+								<div class="principal float-end text-center">Principal <br> Regional Cooperative Training Institute, Bahawalpur</div>
+								<div class="clear-floating"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+			
+		</div>
+	</div>	
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			// make it as accordion for smaller screens
+			if (window.innerWidth < 992) {
+
+			  // close all inner dropdowns when parent is closed
+			  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+				everydropdown.addEventListener('hidden.bs.dropdown', function () {
+				  // after dropdown is hidden, then find all submenus
+					this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+					  // hide every submenu as well
+					  everysubmenu.style.display = 'none';
+					});
+				})
+			  });
+
+			  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+				element.addEventListener('click', function (e) {
+					let nextEl = this.nextElementSibling;
+					if(nextEl && nextEl.classList.contains('submenu')) {	
+					  // prevent opening link if link needs to open dropdown
+					  e.preventDefault();
+					  if(nextEl.style.display == 'block'){
+						nextEl.style.display = 'none';
+					  } else {
+						nextEl.style.display = 'block';
+					  }
+
+					}
+				});
+			  })
+			}
+			// end if innerWidth
+			});
+	</script>
+	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 
+
+	</body>
+
+</html>

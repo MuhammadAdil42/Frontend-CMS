@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Project CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+		<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	
+   <title>Campus Management System</title>
+   </head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+		<div class="row">	
+			<div id="header">
+				<div id="left_menu" class="col-sm-7 float-start">
+					<div id="image_logo" class="float-start">
+					<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+					</div>
+					<div class="float-start">
+						<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+					</div>
+				</div>
+				<div id="right_menu" class=" navbar-light float-end col-sm-5">
+					<div id="userNav">
+					
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							DG ADMIN
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Logout</a></li>
+						  </ul>
+						</li>
+						</ul>
+					</div>
+					<!--<p id="username">DG ADMIN</p> -->
+					<div id="image_user" class="float-end">
+					<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+			  <ul class="navbar-nav">
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Annual Work Plan</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Long Duration Class</a></li>
+					<li> <a class="dropdown-item" href="#">Short Duration Course</a></li>
+					<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+					<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HR</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">New Post</a></li>
+					<li> <a class="dropdown-item" href="#">Filled/Vacant Post</a></li>		
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trainee Enrolement</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Add a New Trainee</a></li>
+					<li> <a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+					<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+					<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">Attendance</a></li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Timetable</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Timetable &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Timetable</a></li>
+						<li><a class="dropdown-item" href="#">View Timetable</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Tentative Training Programme &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Tentative Training Programme</a></li>
+						<li><a class="dropdown-item" href="#">View Tentative Training Programme</a></li>
+						</ul>
+					</li>					
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Syllabus</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Direct AR & Inspector Syllabus</a></li>
+					<li> <a class="dropdown-item" href="#">Promottee AR & Inspector Syllabus</a></li>
+					<li><a class="dropdown-item" href="#">Direct Sub-Inspector Syllabus</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Examination</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Datesheet &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Datesheet</a></li>
+						<li><a class="dropdown-item" href="#">View Datesheet</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Result &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Upload Result</a></li>
+						<li><a class="dropdown-item" href="#">View Result</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Certificate &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Certificate</a></li>
+						<li><a class="dropdown-item" href="#">Download Certifictae</a></li>
+						</ul>
+					</li>	
+						
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Reports</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Monthly Report</a></li>
+					<li> <a class="dropdown-item" href="#">Annual Report</a></li>
+				  </ul>
+				</li>
+				
+			  </ul>
+			</div>
+			<!-- navbar-collapse.// -->
+			</div>
+			<!-- container-fluid.// -->
+		</nav>
+		
+		<div id="pageInfo">
+				
+			<div id="pageInfoMainHeading" class="col-sm-3">
+				<p style="color: white;">Campus Management System</p><br><span id="pageInfoSubHeading">Design Timetable</span>
+			</div>
+							
+			<div class="col-sm-2"></div>
+							
+			<div id="deptLogo" class="col-sm-6">
+				<img src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+	
+		<div id="Form" class="col-lg-12">
+		
+			<!--Monday Code start -->
+			<label for="Monday" class="form-label weekOfTheDay">Monday</label>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">All subjects of selected class will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Incharge Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="startTime">Start Time</label>
+					<input class="form-control" type="time" placeholder="Enter start time" id="ms1">
+					<div class="errordiv" id="mse1"></div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="endTime">End Time</label>
+					<input class="form-control" type="time" placeholder="Enter end time" id="me1">
+					<div class="errordiv" id="mee1"></div>
+				</div>
+			</div>
+			
+			<div class="row mt-4 buttonDiv" id="mondayAddMore">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Monday">Add More</button>
+				</div>
+			</div>
+			<!--Monday Code end -->
+			
+			<!--Tuesday Code start -->
+			<div class="row mt-3">
+				<div class="col-sm-2">
+					<label for="Tuesday" class="form-label weekOfTheDay">Tuesday</label>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-check">
+						<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+						<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">All subjects of selected class will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Incharge Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="startTime">Start Time</label>
+					<input class="form-control" type="time" placeholder="Enter start time" id="tus1">
+					<div class="errordiv" id="tuse1"></div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="endTime">End Time</label>
+					<input class="form-control" type="time" placeholder="Enter end time" id="tue1">
+					<div class="errordiv" id="tuee1"></div>
+				</div>
+			</div>
+			
+			<div class="row mt-4 buttonDiv" id="tuesdayAddMore">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Tuesday">Add More</button>
+				</div>
+			</div>
+			<!--Tuesday Code end -->
+			
+			<!--Wednesday Code start -->
+			<div class="row mt-3">
+				<div class="col-sm-2">
+					<label for="Wednesday" class="form-label weekOfTheDay">Wednesday</label>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-check">
+						<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+						<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">All subjects of selected class will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Incharge Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="startTime">Start Time</label>
+					<input class="form-control" type="time" placeholder="Enter start time" id="ws1">
+					<div class="errordiv" id="wse1"></div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="endTime">End Time</label>
+					<input class="form-control" type="time" placeholder="Enter end time" id="we1">
+					<div class="errordiv" id="wee1"></div>
+				</div>
+			</div>
+			
+			<div class="row mt-4 buttonDiv" id="wednesdayAddMore">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Wednesday">Add More</button>
+				</div>
+			</div>
+			<!--Wednesday Code end -->
+			
+			<!--Thursday Code start -->
+			<div class="row mt-3">
+				<div class="col-sm-2">
+					<label for="Thursday" class="form-label weekOfTheDay">Thursday</label>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-check">
+						<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+						<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">All subjects of selected class will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Incharge Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="startTime">Start Time</label>
+					<input class="form-control" type="time" placeholder="Enter start time" id="ths1">
+					<div class="errordiv" id="thse1"></div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="endTime">End Time</label>
+					<input class="form-control" type="time" placeholder="Enter end time" id="the1">
+					<div class="errordiv" id="thee1"></div>
+				</div>
+			</div>
+			
+			<div class="row mt-4 buttonDiv" id="thursdayAddMore">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Thursday">Add More</button>
+				</div>
+			</div>
+			<!--Thursday Code end -->
+			
+			<!--Friday Code start -->
+			<div class="row mt-3">
+				<div class="col-sm-2">
+					<label for="Friday" class="form-label weekOfTheDay">Friday</label>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-check">
+						<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+						<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">All subjects of selected class will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Incharge Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="startTime">Start Time</label>
+					<input class="form-control" type="time" placeholder="Enter start time" id="fs1">
+					<div class="errordiv" id="fse1"></div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="endTime">End Time</label>
+					<input class="form-control" type="time" placeholder="Enter end time" id="fe1">
+					<div class="errordiv" id="fee1"></div>
+				</div>
+			</div>
+			
+			<div class="row mt-4 buttonDiv" id="fridayAddMore">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Friday">Add More</button>
+				</div>
+			</div>
+			<!--Friday Code end -->
+			
+			<!--Saturday Code start -->
+			<div class="row mt-3">
+				<div class="col-sm-2">
+					<label for="Saturday" class="form-label weekOfTheDay">Saturday</label>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-check">
+						<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+						<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">All subjects of selected class will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-3">
+					<label class="form-label" for="Subject">Incharge Subject</label>
+					<select class="form-select">
+						<option value="1" selected>Dropdown</option>
+						<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="startTime">Start Time</label>
+					<input class="form-control" type="time" placeholder="Enter start time" id="ss1">
+					<div class="errordiv" id="sse1"></div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-3">
+					<label class="form-label" for="endTime">End Time</label>
+					<input class="form-control" type="time" placeholder="Enter end time" id="se1">
+					<div class="errordiv" id="see1"></div>
+				</div>
+			</div>
+			
+			<div class="row mt-4 buttonDiv" id="saturdayAddMore">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Saturday">Add More</button>
+				</div>
+			</div>
+			<!--Saturday Code end -->
+			
+			<div class="row mt-5">
+				<div class="col-sm-4">
+					<label class="form-label" for="parallel TimeTable">Do you want to add a parallel Timetable?</label>
+					<select class="form-select" id = "pTimeTable">
+						<option value="1">Yes</option>
+						<option value="2" selected>No</option>
+					</select>
+				</div>
+			</div>
+			
+			<!-- TimeTable 2 div start -->
+			
+			<div id="TimeTable2">
+				<!--Monday Code start -->
+				<label for="Monday" class="form-label weekOfTheDay mt-5">Monday</label>
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">All subjects of selected class will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Incharge Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="startTime">Start Time</label>
+						<input class="form-control" type="time" placeholder="Enter start time" id="ms21">
+						<div class="errordiv" id="mse21"></div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="endTime">End Time</label>
+						<input class="form-control" type="time" placeholder="Enter end time" id="me21">
+						<div class="errordiv" id="mee21"></div>
+					</div>
+				</div>
+				
+				<div class="row mt-4 buttonDiv" id="mondayAddMoreT2">
+					<div class="col-sm-2 mx-auto">
+						<button type="submit" class="btn btn-primary addMore" value="Add More Monday Timetable2">Add More</button>
+					</div>
+				</div>
+				<!--Monday Code end -->
+				
+				<!--Tuesday Code start -->
+				<div class="row mt-3">
+					<div class="col-sm-2">
+						<label for="Tuesday" class="form-label weekOfTheDay">Tuesday</label>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-check">
+							<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+							<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">All subjects of selected class will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Incharge Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="startTime">Start Time</label>
+						<input class="form-control" type="time" placeholder="Enter start time" id="tus21">
+						<div class="errordiv" id="tuse21"></div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="endTime">End Time</label>
+						<input class="form-control" type="time" placeholder="Enter end time" id="tue21">
+						<div class="errordiv" id="tuee21"></div>
+					</div>
+				</div>
+				
+				<div class="row mt-4 buttonDiv" id="tuesdayAddMoreT2">
+					<div class="col-sm-2 mx-auto">
+						<button type="submit" class="btn btn-primary addMore" value="Add More Tuesday Timetable2">Add More</button>
+					</div>
+				</div>
+				<!--Tuesday Code end -->
+				
+				<!--Wednesday Code start -->
+				<div class="row mt-3">
+					<div class="col-sm-2">
+						<label for="Wednesday" class="form-label weekOfTheDay">Wednesday</label>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-check">
+							<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+							<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">All subjects of selected class will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Incharge Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="startTime">Start Time</label>
+						<input class="form-control" type="time" placeholder="Enter start time" id="ws21">
+						<div class="errordiv" id="wse21"></div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="endTime">End Time</label>
+						<input class="form-control" type="time" placeholder="Enter end time" id="we21">
+						<div class="errordiv" id="wee21"></div>
+					</div>
+				</div>
+				
+				<div class="row mt-4 buttonDiv" id="wednesdayAddMoreT2">
+					<div class="col-sm-2 mx-auto">
+						<button type="submit" class="btn btn-primary addMore" value="Add More Wednesday Timetable2">Add More</button>
+					</div>
+				</div>
+				<!--Wednesday Code end -->
+				
+				<!--Thursday Code start -->
+				<div class="row mt-3">
+					<div class="col-sm-2">
+						<label for="Thursday" class="form-label weekOfTheDay">Thursday</label>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-check">
+							<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+							<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">All subjects of selected class will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Incharge Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="startTime">Start Time</label>
+						<input class="form-control" type="time" placeholder="Enter start time" id="ths21">
+						<div class="errordiv" id="thse21"></div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="endTime">End Time</label>
+						<input class="form-control" type="time" placeholder="Enter end time" id="the21">
+						<div class="errordiv" id="thee21"></div>
+					</div>
+				</div>
+				
+				<div class="row mt-4 buttonDiv" id="thursdayAddMoreT2">
+					<div class="col-sm-2 mx-auto">
+						<button type="submit" class="btn btn-primary addMore" value="Add More Thursday Timetable2">Add More</button>
+					</div>
+				</div>
+				<!--Thursday Code end -->
+				
+				<!--Friday Code start -->
+				<div class="row mt-3">
+					<div class="col-sm-2">
+						<label for="Friday" class="form-label weekOfTheDay">Friday</label>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-check">
+							<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+							<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">All subjects of selected class will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Incharge Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="startTime">Start Time</label>
+						<input class="form-control" type="time" placeholder="Enter start time" id="fs21">
+						<div class="errordiv" id="fse21"></div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="endTime">End Time</label>
+						<input class="form-control" type="time" placeholder="Enter end time" id="fe21">
+						<div class="errordiv" id="fee21"></div>
+					</div>
+				</div>
+				
+				<div class="row mt-4 buttonDiv" id="fridayAddMoreT2">
+					<div class="col-sm-2 mx-auto">
+						<button type="submit" class="btn btn-primary addMore" value="Add More Friday Timetable2">Add More</button>
+					</div>
+				</div>
+				<!--Friday Code end -->
+				
+				<!--Saturday Code start -->
+				<div class="row mt-3">
+					<div class="col-sm-2">
+						<label for="Saturday" class="form-label weekOfTheDay">Saturday</label>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-check">
+							<input class="form-check-input replicateMondayInput mt-2 border-3 border-success" type="checkbox" value="Replicate Monday">
+							<label class="form-check-label replicateMondayLabel" for="Replicate Monday">Same as Monday</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">All subjects of selected class will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-2 col-md-2 col-lg-3">
+						<label class="form-label" for="Subject">Incharge Subject</label>
+						<select class="form-select">
+							<option value="1" selected>Dropdown</option>
+							<option value="2">Instructor, Junior Instructor and Librarian will appear here</option>
+						</select>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3">
+						<label class="form-label" for="startTime">Start Time</label>
+						<input class="form-control" type="time" placeholder="Enter start time" id="ss21">
+						<div class="errordiv" id="sse21"></div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-3	">
+						<label class="form-label" for="endTime">End Time</label>
+						<input class="form-control" type="time" placeholder="Enter end time" id="se21">
+						<div class="errordiv" id="see21"></div>
+					</div>
+				</div>
+				
+				<div class="row mt-4 buttonDiv" id="saturdayAddMoreT2">
+					<div class="col-sm-2 mx-auto">
+						<button type="submit" class="btn btn-primary addMore" value="Add More Saturday Timetable2">Add More</button>
+					</div>
+				</div>
+				<!--Saturday Code end -->
+			
+			</div>
+			
+			<!-- TimeTable 2 div end-->
+			
+			<div class="row mt-5">
+				<div class="col-sm-12">
+					<div class="col-sm-8 float-start">
+						<label for = "Note" class= "form-label">Note:</label>
+						<textarea class="form-control" id=""></textarea>
+					</div>
+					<div class="col-sm-1 float-end mt-4">
+						CTC/FSD
+					</div>
+					<div class="col-sm-1  me-2 float-end mt-3">  
+						<input type="text" class="form-control" id="referenceNo" placeholder="Enter No.">
+					</div>
+					<div class="col-sm-1 float-end mt-4">
+						<div class="col-sm-12">
+							<div class="col-sm-2 me-2 float-end">
+								No
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="row mt-4">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary mt-4" value="Save" id="approvalButtonDesignTimeTable">Forward for Principal's Approval</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+		
+		document.addEventListener("DOMContentLoaded", function(){
+			// make it as accordion for smaller screens
+			if (window.innerWidth < 992) {
+
+			  // close all inner dropdowns when parent is closed
+			  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+				everydropdown.addEventListener('hidden.bs.dropdown', function () {
+				  // after dropdown is hidden, then find all submenus
+					this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+					  // hide every submenu as well
+					  everysubmenu.style.display = 'none';
+					});
+				})
+			  });
+
+			  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+				element.addEventListener('click', function (e) {
+					let nextEl = this.nextElementSibling;
+					if(nextEl && nextEl.classList.contains('submenu')) {	
+					  // prevent opening link if link needs to open dropdown
+					  e.preventDefault();
+					  if(nextEl.style.display == 'block'){
+						nextEl.style.display = 'none';
+					  } else {
+						nextEl.style.display = 'block';
+					  }
+
+					}
+				});
+			  })
+			}
+			// end if innerWidth
+			});
+		
+		var startTime, endTime, startError, endError, prevTime;  //general variables to hold current div parameters status
+		
+		var monStartTime, monEndTime, monStartError, monEndError, mCount, prevMCount, prevMTime;  // Variables to maintain Monday parameters current status
+		monStartTime = "ms1"; monEndTime="me1"; monStartError= "mse1"; monEndError ="mee1"; mCount=1, prevMCount=0, prevMTime=0;
+		
+		var tueStartTime, tueEndTime, tueStartError, tueEndError, tuCount, prevTuCount, prevTuTime;  // Variables to maintain Tuesday parameters current status
+		tueStartTime = "tus1"; tueEndTime="tue1"; tueStartError= "tuse1"; tueEndError ="tuee1"; tuCount=1, prevTuCount=0, prevTuTime=0;
+		
+		var wedStartTime, wedEndTime, wedStartError, wedEndError, wCount, prevWCount, prevWTime;  // Variables to maintain Wednesday parameters current status
+		wedStartTime = "ws1"; wedEndTime="we1"; wedStartError= "wse1"; wedEndError ="wee1"; wCount=1, prevWCount=0, prevWTime=0;
+		
+		var thuStartTime, thuEndTime, thuStartError, thuEndError, thCount, prevThCount, prevThTime;  // Variables to maintain Thursday parameters current status
+		thuStartTime = "ths1"; thuEndTime="the1"; thuStartError= "thse1"; thuEndError ="thee1"; thCount=1, prevThCount=0, prevThTime=0;
+		
+		var friStartTime, friEndTime, friStartError, friEndError, fCount, prevFCount, prevFTime;  // Variables to maintain Friday parameters current status
+		friStartTime = "fs1"; friEndTime="fe1"; friStartError= "fse1"; friEndError ="fee1"; fCount=1, prevFCount=0, prevFTime=0;
+		
+		var satStartTime, satEndTime, satStartError, satEndError, sCount, prevSCount, prevSTime;  // Variables to maintain Saturday parameters current status
+		satStartTime = "ss1"; satEndTime="se1"; satStartError= "sse1"; satEndError ="see1"; sCount=1, prevSCount=0, prevSTime=0;
+		
+		<!-- Timetable2 Variables initilization start -->
+		
+		var monStartTimeT2, monEndTimeT2, monStartErrorT2, monEndErrorT2, mCountT2, prevMCountT2, prevMTimeT2;  // Variables to maintain Monday of Time Table 2 parameters current status
+		monStartTimeT2 = "ms21"; monEndTimeT2="me21"; monStartErrorT2= "mse21"; monEndErrorT2 ="mee21"; mCountT2=21, prevMCountT2=20, prevMTimeT2=0;
+		
+		var tueStartTimeT2, tueEndTimeT2, tueStartErrorT2, tueEndErrorT2, tuCountT2, prevTuCountT2, prevTuTimeT2;  // Variables to maintain Tuesday of Time Table 2 parameters current status
+		tueStartTimeT2 = "tus21"; tueEndTimeT2="tue21"; tueStartErrorT2= "tuse21"; tueEndErrorT2 ="tuee21"; tuCountT2=21, prevTuCountT2=20, prevTuTimeT2=0;
+		
+		var wedStartTimeT2, wedEndTimeT2, wedStartErrorT2, wedEndErrorT2, wCountT2, prevWCountT2, prevWTimeT2;  // Variables to maintain Wednesday of Time Table 2 parameters current status
+		wedStartTimeT2 = "ws21"; wedEndTimeT2="we21"; wedStartErrorT2= "wse21"; wedEndErrorT2 ="wee21"; wCountT2=21, prevWCountT2=20, prevWTimeT2=0;
+		
+		var thuStartTimeT2, thuEndTimeT2, thuStartErrorT2, thuEndErrorT2, thCountT2, prevThCountT2, prevThTimeT2;  // Variables to maintain Thursday of Time Table 2 parameters current status
+		thuStartTimeT2 = "ths21"; thuEndTimeT2="the21"; thuStartErrorT2= "thse21"; thuEndErrorT2 ="thee21"; thCountT2=21, prevThCountT2=20, prevThTimeT2=0;
+		
+		var friStartTimeT2, friEndTimeT2, friStartErrorT2, friEndErrorT2, fCountT2, prevFCountT2, prevFTimeT2;  // Variables to maintain Friday of Time Table 2 parameters current status
+		friStartTimeT2 = "fs21"; friEndTimeT2="fe21"; friStartErrorT2= "fse21"; friEndErrorT2 ="fee21"; fCountT2=21, prevFCountT2=20, prevFTimeT2=0;
+		
+		var satStartTimeT2, satEndTimeT2, satStartErrorT2, satEndErrorT2, sCountT2, prevSCountT2, prevSTimeT2;  // Variables to maintain Saturday of Time Table 2 parameters current status
+		satStartTimeT2 = "ss21"; satEndTimeT2="se21"; satStartErrorT2= "sse21"; satEndErrorT2 ="see21"; sCountT2=21, prevSCountT2=20, prevSTimeT2=0;
+		
+		<!-- Timetable2 Variables initilization end -->
+		
+		$(".addMore").click(function(){
+			
+			if($(this).val() == "Add More Monday")
+			{
+				//alert("I've selected Monday button!");
+				
+				startTime = monStartTime.toString();
+				endTime = monEndTime.toString();
+				startError = monStartError.toString();
+				endError = monEndError.toString();
+				prevTime= prevMTime.toString();
+			}
+			else if($(this).val() == "Add More Tuesday")
+			{
+				//alert("I've selected Tuesday button!");
+				
+				startTime = tueStartTime.toString();
+				endTime = tueEndTime.toString();
+				startError = tueStartError.toString();
+				endError = tueEndError.toString();
+				prevTime = prevTuTime.toString();
+			}
+			else if($(this).val() == "Add More Wednesday")
+			{
+				//alert("I've selected Wednesday button!");
+				
+				startTime = wedStartTime.toString();
+				endTime = wedEndTime.toString();
+				startError = wedStartError.toString();
+				endError = wedEndError.toString();
+				prevTime = prevWTime.toString();
+			}
+			else if($(this).val() == "Add More Thursday")
+			{
+				//alert("I've selected Thursday button!");
+				
+				startTime = thuStartTime.toString();
+				endTime = thuEndTime.toString();
+				startError = thuStartError.toString();
+				endError = thuEndError.toString();
+				prevTime = prevThTime.toString();
+			}
+			else if($(this).val() == "Add More Friday")
+			{
+				//alert("I've selected Friday button!");
+				
+				startTime = friStartTime.toString();
+				endTime = friEndTime.toString();
+				startError = friStartError.toString();
+				endError = friEndError.toString();
+				prevTime = prevFTime.toString();
+			}
+			else if ($(this).val() == "Add More Saturday")
+			{
+				//alert("I've selected Saturday button!");
+				
+				startTime = satStartTime.toString();
+				endTime = satEndTime.toString();
+				startError = satStartError.toString();
+				endError = satEndError.toString();
+				prevTime = prevSTime.toString();
+			}
+			else if($(this).val() == "Add More Monday Timetable2")
+			{
+				startTime = monStartTimeT2.toString();
+				endTime = monEndTimeT2.toString();
+				startError = monStartErrorT2.toString();
+				endError = monEndErrorT2.toString();
+				prevTime = prevMTimeT2.toString();
+			}
+			else if($(this).val() == "Add More Tuesday Timetable2")
+			{
+				//alert("I've selected Tuesday button!");
+				
+				startTime = tueStartTimeT2.toString();
+				endTime = tueEndTimeT2.toString();
+				startError = tueStartErrorT2.toString();
+				endError = tueEndErrorT2.toString();
+				prevTime = prevTuTimeT2.toString();
+			}
+			else if($(this).val() == "Add More Wednesday Timetable2")
+			{
+				//alert("I've selected Wednesday button!");
+				
+				startTime = wedStartTimeT2.toString();
+				endTime = wedEndTimeT2.toString();
+				startError = wedStartErrorT2.toString();
+				endError = wedEndErrorT2.toString();
+				prevTime = prevWTimeT2.toString();
+			}
+			else if($(this).val() == "Add More Thursday Timetable2")
+			{
+				//alert("I've selected Thursday button!");
+				
+				startTime = thuStartTimeT2.toString();
+				endTime = thuEndTimeT2.toString();
+				startError = thuStartErrorT2.toString();
+				endError = thuEndErrorT2.toString();
+				prevTime = prevThTimeT2.toString();
+			}
+			else if($(this).val() == "Add More Friday Timetable2")
+			{
+				//alert("I've selected Friday button!");
+				
+				startTime = friStartTimeT2.toString();
+				endTime = friEndTimeT2.toString();
+				startError = friStartErrorT2.toString();
+				endError = friEndErrorT2.toString();
+				prevTime = prevFTimeT2.toString();
+			}
+			else
+			{
+				//alert("I've selected Saturday button!");
+				
+				startTime = satStartTimeT2.toString();
+				endTime = satEndTimeT2.toString();
+				startError = satStartErrorT2.toString();
+				endError = satEndErrorT2.toString();
+				prevTime = prevSTimeT2.toString();
+			}
+			
+			// alert("Value of previous Time is: "+ prevTime); 
+			
+			var sTime, eTime, differ, pTime;
+			sTime = $('#' + startTime.toString()).val();
+			eTime = $('#' + endTime.toString()).val();
+			pTime = $('#' + prevTime.toString()).val();
+			differ = TimeDifference(sTime, eTime, pTime);
+			
+			<!-- alert("Value of Time difference is: "+ differ); -->
+			
+		if(differ==true)
+		{
+		
+			if($(this).val() == "Add More Monday")
+				{
+					
+					prevMCount++;
+					mCount++;
+					monStartTime = 'ms' + mCount.toString();
+					monEndTime = 'me' + mCount.toString();
+					monStartError = 'mse' + mCount.toString();
+					monEndError = 'mee' + mCount.toString();
+					prevMTime = 'me' + prevMCount.toString();
+					
+					startTime = monStartTime.toString();
+					endTime = monEndTime.toString();
+					startError = monStartError.toString();
+					endError = monEndError.toString();
+				}
+			else if($(this).val() == "Add More Tuesday")
+				{
+					prevTuCount++;
+					tuCount++;
+					tueStartTime = 'tus' + tuCount.toString();
+					tueEndTime = 'tue' + tuCount.toString();
+					tueStartError = 'tuse' + tuCount.toString();
+					tueEndError = 'tuee' + tuCount.toString();
+					prevTuTime = 'tue' + prevTuCount.toString();
+					
+					startTime = tueStartTime.toString();
+					endTime = tueEndTime.toString();
+					startError = tueStartError.toString();
+					endError = tueEndError.toString();
+				}
+			else if($(this).val() == "Add More Wednesday")
+				{
+					prevWCount++;
+					wCount++;
+					wedStartTime = 'ws' + wCount.toString();
+					wedEndTime = 'we' + wCount.toString();
+					wedStartError = 'wse' + wCount.toString();
+					wedEndError = 'wee' + wCount.toString();
+					prevWTime = 'we' + prevWCount.toString();
+					
+					startTime = wedStartTime.toString();
+					endTime = wedEndTime.toString();
+					startError = wedStartError.toString();
+					endError = wedEndError.toString();
+				}
+			else if($(this).val() == "Add More Thursday")
+				{
+					prevThCount++;
+					thCount++;
+					thuStartTime = 'ths' + thCount.toString();
+					thuEndTime = 'the' + thCount.toString();
+					thuStartError = 'thse' + thCount.toString();
+					thuEndError = 'thee' + thCount.toString();
+					prevThTime = 'the' + prevThCount.toString();
+					
+					startTime = thuStartTime.toString();
+					endTime = thuEndTime.toString();
+					startError = thuStartError.toString();
+					endError = thuEndError.toString();
+				}
+			else if($(this).val() == "Add More Friday")
+				{
+					prevFCount++;
+					fCount++;
+					friStartTime = 'fs' + fCount.toString();
+					friEndTime = 'fe' + fCount.toString();
+					friStartError = 'fse' + fCount.toString();
+					friEndError = 'fee' + fCount.toString();
+					prevFTime = 'fe' + prevFCount.toString();
+					
+					startTime = friStartTime.toString();
+					endTime = friEndTime.toString();
+					startError = friStartError.toString();
+					endError = friEndError.toString();
+				}
+			else if($(this).val() == "Add More Saturday")
+				{
+					prevSCount++;
+					sCount++;
+					satStartTime = 'ss' + sCount.toString();
+					satEndTime = 'se' + sCount.toString();
+					satStartError = 'sse' + sCount.toString();
+					satEndError = 'see' + sCount.toString();
+					prevSTime = 'se' + prevSCount.toString();
+					
+					startTime = satStartTime.toString();
+					endTime = satEndTime.toString();
+					startError = satStartError.toString();
+					endError = satEndError.toString();
+				}
+			else if($(this).val() == "Add More Monday Timetable2")
+				{
+					prevMCountT2++;
+					mCountT2++;
+					monStartTimeT2 = 'ms' + mCountT2.toString();
+					monEndTimeT2 = 'me' + mCountT2.toString();
+					monStartErrorT2 = 'mse' + mCountT2.toString();
+					monEndErrorT2 = 'mee' + mCountT2.toString();
+					prevMTimeT2 = 'me' + prevMCountT2.toString();
+					
+					startTime = monStartTimeT2.toString();
+					endTime = monEndTimeT2.toString();
+					startError = monStartErrorT2.toString();
+					endError = monEndErrorT2.toString();	
+				}
+				else if($(this).val() == "Add More Tuesday Timetable2")
+				{
+					prevTuCountT2++;
+					tuCountT2++;
+					tueStartTimeT2 = 'tus' + tuCountT2.toString();
+					tueEndTimeT2 = 'tue' + tuCountT2.toString();
+					tueStartErrorT2 = 'tuse' + tuCountT2.toString();
+					tueEndErrorT2 = 'tuee' + tuCountT2.toString();
+					prevTuTimeT2 = 'tue' + prevTuCountT2.toString();
+					
+					startTime = tueStartTimeT2.toString();
+					endTime = tueEndTimeT2.toString();
+					startError = tueStartErrorT2.toString();
+					endError = tueEndErrorT2.toString();
+				}
+			else if($(this).val() == "Add More Wednesday Timetable2")
+				{
+					prevWCountT2++;
+					wCountT2++;
+					wedStartTimeT2 = 'ws' + wCountT2.toString();
+					wedEndTimeT2 = 'we' + wCountT2.toString();
+					wedStartErrorT2 = 'wse' + wCountT2.toString();
+					wedEndErrorT2 = 'wee' + wCountT2.toString();
+					prevWTimeT2 = 'we' + prevWCountT2.toString();
+					
+					startTime = wedStartTimeT2.toString();
+					endTime = wedEndTimeT2.toString();
+					startError = wedStartErrorT2.toString();
+					endError = wedEndErrorT2.toString();
+				}
+			else if($(this).val() == "Add More Thursday Timetable2")
+				{
+					prevThCountT2++;
+					thCountT2++;
+					thuStartTimeT2 = 'ths' + thCountT2.toString();
+					thuEndTimeT2 = 'the' + thCountT2.toString();
+					thuStartErrorT2 = 'thse' + thCountT2.toString();
+					thuEndErrorT2 = 'thee' + thCountT2.toString();
+					prevThTimeT2 = 'the' + prevThCountT2.toString();
+					
+					startTime = thuStartTimeT2.toString();
+					endTime = thuEndTimeT2.toString();
+					startError = thuStartErrorT2.toString();
+					endError = thuEndErrorT2.toString();
+				}
+			else if($(this).val() == "Add More Friday Timetable2")
+				{
+					prevFCountT2++;
+					fCountT2++;
+					friStartTimeT2 = 'fs' + fCountT2.toString();
+					friEndTimeT2 = 'fe' + fCountT2.toString();
+					friStartErrorT2 = 'fse' + fCountT2.toString();
+					friEndErrorT2 = 'fee' + fCountT2.toString();
+					prevFTimeT2 = 'fe' + prevFCountT2.toString();
+					
+					startTime = friStartTimeT2.toString();
+					endTime = friEndTimeT2.toString();
+					startError = friStartErrorT2.toString();
+					endError = friEndErrorT2.toString();
+				}
+			else
+				{
+					prevSCountT2++;
+					sCountT2++;
+					satStartTimeT2 = 'ss' + sCountT2.toString();
+					satEndTimeT2 = 'se' + sCountT2.toString();
+					satStartErrorT2 = 'sse' + sCountT2.toString();
+					satEndErrorT2 = 'see' + sCountT2.toString();
+					prevSTimeT2 = 'se' + prevSCountT2.toString();
+					
+					startTime = satStartTimeT2.toString();
+					endTime = satEndTimeT2.toString();
+					startError = satStartErrorT2.toString();
+					endError = satEndErrorT2.toString();
+				}
+			
+			/* creating row div start */
+			
+			var rowDiv = document.createElement("div");
+			rowDiv.classList.add('row');
+			rowDiv.classList.add('mt-3');
+			
+			/* creating row div end */
+			
+			/* creating dropdown div start */
+			var divDropDown = document.createElement("div");
+			rowDiv.appendChild(divDropDown);
+			divDropDown.classList.add('col-sm-2');
+			divDropDown.classList.add('col-md-2');
+			divDropDown.classList.add('col-lg-3');
+			
+			/* dropdown label code start*/
+			var labelDropDown = document.createElement("label");
+			divDropDown.appendChild(labelDropDown);
+			labelDropDown.classList.add('form-label');
+			labelDropDown.htmlFor ="Subject";
+			labelDropDown.innerHTML ="Subject";
+			/* dropdown label code end*/
+			
+			/* dropdown Input code start*/
+			var inputDropDown = document.createElement("select");
+			divDropDown.appendChild(inputDropDown);
+			inputDropDown.classList.add('form-select');
+			
+			/*creating ist option for dropdown input start*/
+			var option1 =document.createElement('option');
+			var option1Text = document.createTextNode ('Dropdown');
+		
+			//set option text
+			option1.appendChild(option1Text);
+			// and option value
+			option1.setAttribute ('value', '1');
+			option1.setAttribute('selected', 'selected'); //setting the option as the selected one
+			
+			//add the option to the select input
+			inputDropDown.appendChild(option1);
+			/*creating ist option for dropdown input end*/
+			
+			/*creating 2nd option for dropdown input start*/
+			var option2 =document.createElement('option');
+			var option2Text = document.createTextNode ('All subjects of selected class will appear here');
+		
+			//set option text
+			option2.appendChild(option2Text);
+			// and option value
+			option2.setAttribute ('value', '2');
+			
+			//add the option to the select input
+			inputDropDown.appendChild(option2);
+			/*creating 2nd option for dropdown input end*/
+			
+			/* dropdown Input code end*/
+			
+			/* creating dropdown div end */
+			
+			/* creating dropdown div Incharge Subject start */
+			var divDropDownInchargeSubject = document.createElement("div");
+			rowDiv.appendChild(divDropDownInchargeSubject);
+			divDropDownInchargeSubject.classList.add('col-sm-2');
+			divDropDownInchargeSubject.classList.add('col-md-2');
+			divDropDownInchargeSubject.classList.add('col-lg-3');
+			
+			/* dropdown label Incharge Subject code start*/
+			var labelDropDownInchargeSubject = document.createElement("label");
+			divDropDownInchargeSubject.appendChild(labelDropDownInchargeSubject);
+			labelDropDownInchargeSubject.classList.add('form-label');
+			labelDropDownInchargeSubject.htmlFor ="Incharge Subject";
+			labelDropDownInchargeSubject.innerHTML ="Incharge Subject";
+			/* dropdown label Incharge Subject code end*/
+			
+			/* dropdown Input Incharge Subject code start*/
+			var inputDropDownInchargeSubject = document.createElement("select");
+			divDropDownInchargeSubject.appendChild(inputDropDownInchargeSubject);
+			inputDropDownInchargeSubject.classList.add('form-select');
+			
+			/*creating ist option for Incharge subject dropdown input start*/
+			var option1InchargeSubject =document.createElement('option');
+			var option1InchargeSubjectText = document.createTextNode ('Dropdown');
+		
+			//set option text
+			option1InchargeSubject.appendChild(option1InchargeSubjectText);
+			// and option value
+			option1InchargeSubject.setAttribute ('value', '1');
+			option1InchargeSubject.setAttribute('selected', 'selected'); //setting the option as the selected one
+			
+			//add the option to the select input
+			inputDropDownInchargeSubject.appendChild(option1InchargeSubject);
+			/*creating ist option for Incharge Subject dropdown input end*/
+			
+			/*creating 2nd option for Incharge Subject dropdown input start*/
+			var option2InchargeSubject =document.createElement('option');
+			var option2InchargeSubjectText = document.createTextNode ('Instructor, Junior Instructor and Librarian will appear here');
+		
+			//set option text
+			option2InchargeSubject.appendChild(option2InchargeSubjectText);
+			// and option value
+			option2InchargeSubject.setAttribute ('value', '2');
+			
+			//add the option to the select input
+			inputDropDownInchargeSubject.appendChild(option2InchargeSubject);
+			/*creating 2nd option for Incharge Subject dropdown input end*/
+			
+			/* dropdown Input Incharge Subject code end*/
+			
+			/* creating dropdown div Incharge Subject end */
+			
+			/* Input start time div start*/
+			var startTimeDiv= document.createElement('div');
+			rowDiv.appendChild(startTimeDiv);
+			startTimeDiv.classList.add('col-sm-4');
+			startTimeDiv.classList.add('col-md-4');
+			startTimeDiv.classList.add('col-lg-3');
+			
+			/* start time label start*/
+			var labelStartTime = document.createElement('label');
+			startTimeDiv.appendChild(labelStartTime);
+			labelStartTime.classList.add('form-label');
+			labelStartTime.htmlFor = "Start Time";
+			labelStartTime.innerHTML = "Start Time";
+			/* start time label end*/
+			
+			/* start time input start*/
+			var inputStartTime = document.createElement('input');
+			startTimeDiv.appendChild(inputStartTime);
+			inputStartTime.classList.add('form-control');
+			inputStartTime.setAttribute('type', 'time');
+			inputStartTime.setAttribute('placeholder', 'Enter start time');
+			inputStartTime.setAttribute('id', startTime.toString());
+			/* start time input end*/
+			
+			/* Start time error start */
+			var errorStartTime = document.createElement('div');
+			startTimeDiv.appendChild(errorStartTime);
+			errorStartTime.classList.add('errordiv');
+			errorStartTime.setAttribute('id',startError.toString());
+			/* Start time error end */
+			
+			/* Input start time div end*/
+			
+			/* Input end time div start*/
+			var endTimeDiv= document.createElement('div');
+			rowDiv.appendChild(endTimeDiv);
+			endTimeDiv.classList.add('col-sm-4');
+			endTimeDiv.classList.add('col-md-4');
+			endTimeDiv.classList.add('col-lg-3');
+			
+			/* end time label start*/
+			var labelEndTime = document.createElement('label');
+			endTimeDiv.appendChild(labelEndTime);
+			labelEndTime.classList.add('form-label');
+			labelEndTime.htmlFor = "End Time";
+			labelEndTime.innerHTML = "End Time";
+			/* End time label end*/
+			
+			/* End time input start*/
+			var inputEndTime = document.createElement('input');
+			endTimeDiv.appendChild(inputEndTime);
+			inputEndTime.classList.add('form-control');
+			inputEndTime.setAttribute('type', 'time');
+			inputEndTime.setAttribute('placeholder', 'Enter end time');
+			inputEndTime.setAttribute('id', endTime.toString());
+			/* End time input end*/
+			
+			/* End time error start */
+			var errorEndTime = document.createElement('div');
+			endTimeDiv.appendChild(errorEndTime);
+			errorEndTime.classList.add('errordiv');
+			errorEndTime.setAttribute('id',endError.toString());
+			/* End time error end */
+			
+			/* Input end time div end*/
+			
+			if($(this).val() == "Add More Monday")
+			{
+				$("#mondayAddMore").before(rowDiv);  	// append it before monday Add More button
+			}
+			else if($(this).val() == "Add More Tuesday")
+			{
+				$("#tuesdayAddMore").before(rowDiv);  	// append it before tuesday Add More button
+			}
+			else if($(this).val() == "Add More Wednesday")
+			{
+				$("#wednesdayAddMore").before(rowDiv);  // append it before wednesday Add More button
+			}
+			else if($(this).val() == "Add More Thursday")
+			{
+				$("#thursdayAddMore").before(rowDiv);  	// append it before thursday Add More button
+			}
+			else if($(this).val() == "Add More Friday")
+			{
+				$("#fridayAddMore").before(rowDiv);  	// append it before friday Add More button
+			}
+			else if($(this).val() == "Add More Saturday")
+			{
+				$("#saturdayAddMore").before(rowDiv);  	// append it before saturday Add More button
+			}
+			else if($(this).val() == "Add More Monday Timetable2")
+			{
+				$("#mondayAddMoreT2").before(rowDiv);  // append it before monday of "Time Table 2" Add More button
+			}
+			else if($(this).val() == "Add More Tuesday Timetable2")
+			{
+				$("#tuesdayAddMoreT2").before(rowDiv);  	// append it before tuesday of "Time Table 2" Add More button
+			}
+			else if($(this).val() == "Add More Wednesday Timetable2")
+			{
+				$("#wednesdayAddMoreT2").before(rowDiv);  // append it before wednesday of "Time Table 2" Add More button
+			}
+			else if($(this).val() == "Add More Thursday Timetable2")
+			{
+				$("#thursdayAddMoreT2").before(rowDiv);  	// append it before thursday of "Time Table 2" Add More button
+			}
+			else if($(this).val() == "Add More Friday Timetable2")
+			{
+				$("#fridayAddMoreT2").before(rowDiv);  	// append it before friday of "Time Table 2" Add More button
+			}
+			else
+			{
+				$("#saturdayAddMoreT2").before(rowDiv);  	// append it before saturday of "Time Table 2" Add More button
+			}
+			
+		}
+			
+		});
+	
+		function TimeDifference(sTime, eTime, pTime){
+	
+			var hours = Math.floor(( new Date("1970-1-1 " + eTime) - new Date("1970-1-1 " + sTime) ) / 1000/60/60); /*Calculating total hours*/
+			var minutes = Math.floor ((new Date("1970-1-1 " + eTime) - new Date("1970-1-1 " + sTime)) / 1000/60); /* Calculating total minutes */
+			minutes -= (hours*60); /* calculating Minutes excluding hours*/
+			
+			var prevHours = Math.floor(( new Date("1970-1-1 " + sTime) - new Date("1970-1-1 " + pTime) ) / 1000/60/60); /*Calculating previous end time total hours*/
+			
+			if(sTime == "" && eTime == "")
+			{
+				$('#' + startError.toString()).html("Start Time can't be empty!");
+				$('#' + endError.toString()).html("End Time can't be empty!");
+			}
+			else if (eTime=="")
+			{
+				$('#' + startError.toString()).html("");
+				$('#' + endError.toString()).html("End Time can't be empty!");
+			}
+			else if (sTime=="") 
+			{
+				$('#' + endError.toString()).html("");
+				$('#' + startError.toString()).html("Start Time can't be empty!");
+			}
+			else if (prevHours<0)
+			{
+				$('#' + startError.toString()).html("Start Time can't be less than previous End Time!");
+				$('#' + endError.toString()).html("");
+			}
+			else if(hours<0)
+			{
+				$('#' + startError.toString()).html("");
+				$('#' + endError.toString()).html("End Time can't be less than Start time!");
+			}
+			
+			else if (hours==0 && minutes ==0)
+			{
+				$('#' + startError.toString()).html("Start Time can't be the same as End Time!");
+				$('#' + endError.toString()).html("End Time can't be the same as Start Time!");
+			}
+			else if(hours==0 && minutes < 30)
+			{
+				$('#' + startError.toString()).html("");
+				$('#' + endError.toString()).html("Lecture can't be less than 30 minutes!");
+			}
+			else
+			{	
+				$('#' + endError.toString()).html("");
+				$('#' + startError.toString()).html("");
+				return true;
+				
+				<!-- alert("Time Table has been submitted."); -->
+			}
+	}
+	
+	$("#pTimeTable").change(function(){
+			
+		if ($(this).val() == "1")
+		{
+			$("#TimeTable2").show();
+		}
+			
+		else 	
+		{
+			$("#TimeTable2").hide();
+		}
+		
+	});
+	
+	$("#pTimeTable").trigger("change");
+	
+	</script>
+	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 
+
+	</body>
+
+</html>

@@ -1,0 +1,1484 @@
+.main
+	{
+	background-color: #ebf3f3;
+	
+	}
+	p
+	{
+		color: #8c8b8f;
+	}
+	#main_heading
+	{
+		color: #0c838b;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	#sub_heading
+	{
+		font-size: 12px;
+		color: #8c8b8f;
+	}
+	
+	#left_menu
+	{	
+		height: 50px;
+	}
+	#right_menu
+	{
+		height: 50px;
+	}
+	#text
+	{
+		float: left;
+		font-size:10px;		
+	}
+	
+	#image_logo
+	{
+	margin-right: 5px;
+	}
+	
+	#image_user
+	{
+		width: 50px;
+		height: 50px;
+	}
+	
+	#userNav
+	{
+		font-size: 14px;
+		margin-left: 10px;
+		height: 50px;
+		float: right;
+	}
+	#imageSignIn
+	{
+		border-radius: 50%;
+	}
+	#header
+	{
+		background-color: white;
+		padding: 10px;
+	}
+	.clear_floating
+	{
+		clear: both;
+	}
+	#pageInfo
+	{
+		height: 130px;
+		background-color: #376768;	
+		border-radius: 7px;
+		overflow: hidden;
+        white-space: nowrap;
+	}
+	#deptLogo
+	{
+		margin-top: 20px;
+	}
+	#logoImg
+	{
+		width: 400px;
+		height: 75px;
+	}
+	#pageInfoMainHeading
+	{
+		float:left;
+		margin: 25px 0 0 30px;
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		<!--background-color: red; -->  
+	}
+	#pageInfoSubHeading
+	{
+		float: left;
+		color: white;
+		font-size: 16px;
+		position: relative;
+		bottom:15px;
+	    <!--background-color: yellow; -->
+	}
+	.clear-floating	
+	{
+		clear: both;
+	}
+		#Form
+		{
+			background-color: white;
+			margin-top: 17px;
+			border-radius: 7px;
+			padding: 20px;
+		}
+		#WP_heading
+		{
+			font-weight: bold;
+			text-align: center;
+		}
+		#Long_Duration_Class
+		{
+			font-weight: bold;
+			margin-top: 50px;
+		}
+		#numOfClasses 
+		{
+			width: 10px;
+		}
+		#numOfParticipants
+		{
+			width: 10px;
+		}
+		button:hover
+		{
+			background-color:orange;
+		}
+		#footer
+		{
+			margin-top: 100px;
+			background-color: white;
+			padding-left:10px;
+		}
+		#footerText
+		{
+			color: #010A03;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#approvalButton
+		{
+			margin: 20px 15px 0 0; 
+			color: white;
+			border-radius: 7px;
+			word-wrap: break-word;
+			width: 170px;
+		}
+		#printButton
+		{
+			margin-top: 20px;
+			color: white;
+			border-radius: 7px;
+			width: 100px;
+		}
+		#addNewButton
+		{
+			white-space: normal;
+			width: 100px;
+			margin-bottom: 10px;
+		}
+		#actionRow
+		{
+			width: 120px;
+		}
+		#topic
+		{
+			width: 200px;
+		}
+		#concernedOfficer
+		{
+			width: 180px;
+		}
+		#period1, #place1,
+		#period2, #place2,
+		#period3, #place3,
+		#totalCoursesText, #totalTraineesText,
+		#higherUpText
+		{
+			color: black;
+		}
+		
+	#main_panel
+	{
+		background-color: #376768;
+		border: 1px solid black;
+		height: 100%;
+	}
+	#login_panel
+	{
+		background-color: white; 
+		margin: 8% auto 8% auto; 
+		border-radius: 1%;
+		padding: 0 30px 15px 30px;
+	}
+	#logo
+	{
+		height: 80px;
+		width: 103px;
+		margin: 20px auto 10px auto;		
+	}
+	#campusName
+	{
+		color: #0c838b;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	#govtText
+	{
+		color: #8c8b8f;
+	}
+	#email
+	{
+		margin-bottom: 20px;
+		
+	}
+	#link
+	{
+		float: right;
+		color: #0c838b;
+		text-decoration: none;
+	}
+	#rememberUser
+	{
+		float: left;
+	}
+	#forgotPass
+	{
+		float: right;
+	}
+	
+	#credentials_Panel
+	{
+		margin: 10px 0 65px 0;
+		color: #0c838b;
+		font-size: 14px;
+	}
+	#sumbitButton
+	{
+		background-color: #0c838b;
+		color: white;
+	}
+	.label
+	{
+		color: #8c8b8f;
+		font-size: 14px;
+	}
+	#flexCheckChecked
+	{
+		background-color: #0c838b; 
+		float: left;
+	}
+	#errorMsg
+	{
+		color: red;
+	}
+	
+	<!-- Calender CSS-->
+
+		inputCalender {
+			padding: 22px 15px !important;
+			border: 1px solid #CFD8DC !important;
+			border-radius: 4px !important;
+			box-sizing: border-box;
+			background-color: #fff !important;
+			color: #000 !important;
+			font-size: 16px !important;
+			letter-spacing: 1px;
+			position: relative;
+		}
+
+		input:focus {
+			-moz-box-shadow: none !important;
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+			border: 1px solid #1976D2 !important;
+			outline-width: 0
+		}
+
+		.fa-calendar {
+			position: absolute;
+			top: 13px;
+			font-size: 20px;
+			color: #1976D2;
+			z-index: 1000;
+		}
+
+		#fa-1 {
+			left: calc(50% - 40px)
+		}
+
+		#fa-2 {
+			left: calc(100% - 40px)
+		}
+
+		.form-control-placeholder {
+			position: absolute;
+			top: -10px !important;
+			padding: 12px 2px 0 2px;
+			opacity: 0.5
+		}
+		
+		#start-p
+		{
+			left: -17px;
+		}
+
+		#end-p {
+			left: calc(49% )
+		}
+
+		.form-control:focus+.form-control-placeholder,
+		.form-control:valid+.form-control-placeholder {
+			font-size: 95%;
+			top: 10px;
+			transform: translate3d(0, -100%, 0);
+			opacity: 1
+		}
+
+		::placeholder {
+			color: #BDBDBD;
+			opacity: 1
+		}
+
+		:-ms-input-placeholder {
+			color: #BDBDBD
+		}
+
+		::-ms-input-placeholder {
+			color: #BDBDBD
+		}
+
+		button:focus {
+			-moz-box-shadow: none !important;
+			-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+			outline-width: 0
+		}
+
+		.datepicker {
+			background-color: #fff;
+			border-radius: 0 !important;
+			align-content: center !important;
+			padding: 0 !important
+		}
+
+		.datepicker-dropdown {
+			border-right: #1976D2;
+			border-left: #1976D2
+		}
+
+		.datepicker table tr td.today,
+		span.focused {
+			border-radius: 50% !important;
+			background-image: linear-gradient(#FFF3E0, #FFE0B2)
+		}
+
+		thead tr:nth-child(2) {
+			background-color: #1976D2 !important
+		}
+
+		thead tr:nth-child(3) th {
+			font-weight: bold !important;
+			padding: 20px 10px !important;
+			color: #BDBDBD !important
+		}
+
+		tbody tr td {
+			padding: 10px !important
+		}
+
+		tfoot tr:nth-child(2) th {
+			padding: 10px !important;
+			border-top: 1px solid #CFD8DC !important
+		}
+
+		.cw {
+			font-size: 14px !important;
+			background-color: #E8EAF6 !important;
+			border-radius: 0px !important;
+			padding: 0px 20px !important;
+			margin-right: 10px solid #fff !important
+		}
+
+		.old,
+		.day,
+		.new {
+			width: 40px !important;
+			height: 40px !important;
+			border-radius: 0px !important
+		}
+
+		.day.old,
+		.day.new {
+			color: #E0E0E0 !important
+		}
+
+		.day.old:hover,
+		.day.new:hover {
+			border-radius: 50% !important
+		}
+
+		.old-day:hover,
+		.day:hover,
+		.new-day:hover,
+		.month:hover,
+		.year:hover,
+		.decade:hover,
+		.century:hover {
+			border-radius: 50% !important;
+			background-color: #eee
+		}
+
+		.active {
+			border-radius: 50% !important;
+			background-image: linear-gradient(#1976D2, #1976D2) !important;
+			color: #fff !important
+		}
+
+		.range-start,
+		.range-end {
+			border-radius: 50% !important;
+			background-image: linear-gradient(#1976D2, #1976D2) !important
+		}
+
+		.range {
+			background-color: #E3F2FD !important
+		}
+
+		
+		.datepicker-switch {
+			border-radius: 0 !important;
+		    padding: 10px 10px 10px 10px !important;
+			font-size: 18px;
+			opacity: 0.7;
+			color: #fff;
+		}
+		.prev,
+		.next
+		{
+			border-radius: 0 !important;
+		    <!--padding: 10px 10px 10px 10px !important;-->
+			font-size: 18px;
+			opacity: 0.7;
+			color: #fff;
+		}
+
+		.prev:hover,
+		.next:hover,
+		.datepicker-switch:hover {
+			background-color: inherit !important;
+			opacity: 1
+		}
+
+		@media screen and (max-width: 726px) {
+			.datepicker-dropdown.datepicker-orient-right:before {
+				right: calc(50% - 6px)
+			}
+
+			.datepicker-dropdown.datepicker-orient-right:after {
+				right: calc(50% - 5px)
+			}
+		}
+		
+		#formHeading
+		{
+			font-size: 22px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		#secondRow
+		{
+			margin: 80px 0 50px 0;
+			<!--overflow: hidden;
+			white-space: nowrap; -->
+		}
+		
+		#descriptionInput
+		{
+			height: 200px;
+		}
+		#saveButton
+		{
+			margin-top: 20px; 
+			width: 130px;
+			color: white;
+			border-radius: 7px;
+			margin-right: 20px;
+		}
+		#resetButton
+		{
+			margin-top: 20px;
+			width: 130px;
+			color: black;
+			border-radius: 7px;
+		}
+		#errorCalenderStart
+		{
+			position: relative;
+			bottom: 35px !important;
+			height: 10px;
+			left: 3px;	
+		}
+		#errorCalenderEnd
+		{
+			position: relative;
+			bottom: 35px !important;
+			height: 10px;
+			/*left: calc(50% - 2px); !important;*/
+		}
+		#errorDiv
+		{
+			color: red;
+		}
+		#calendarInput
+		{
+			left: -10px;
+		}
+		#saveButtonShortDuration
+		{ 
+			width: 130px;
+			color: white;
+			border-radius: 7px;
+			margin-right: 20px;
+		}
+		#resetButtonShortDuration
+		{
+			width: 130px;
+			color: black;
+			border-radius: 7px;
+		}
+		
+		#nameOfClass, #duration, #numberOfClass,
+		#numberOfParticipants, #inchargeClass,
+		#sessionStartDate, #sessionEndDate,
+		#desInputViewLongDuration, #nameOfCourse,
+		#topic, #concernedOfficer, #typeOfCourse,
+		#duration, #numberOfCourses,
+		#inchargeCourse,#descriptionInput,
+		#period1, #place1, #period2, #place2,
+		#period3, #place3, #designation, #totalPost,
+		#bps,#numberOfFilledPosts, #numberOfVacantPosts,
+		#name, #cnic, #nomineeName, #campusAllocation,
+		#courseType, #courseName, #fatherName, #cellNo,
+		#emergencyNo, #permanentAddress, #traineeType,
+    	#division, #district, #appointedOffice,
+	    #officePtcl, #officeAddress, #assignRollNo,
+    	#instructorAllocation, #nameOfUser, #email,
+		#password, #dated, #shortCourseLabel, #totalTrainees,
+		#higherUp
+		{
+			color: black;
+			font-weight: bold;
+		}
+		#desInputViewLongDuration
+		{
+			height: 100px;
+		}
+		
+	#secondRowNewPost
+	{
+		margin-top: 30px;
+	}
+	#hrInfoTable
+	{
+		margin-top:50px;
+	}	
+	
+	.cnicContainer
+	{
+		width: 400px;
+	}
+	.cnicField
+	{
+		width:550px;
+	}
+	.padding-0
+	{
+    padding-right:0;
+    padding-left:0;
+	}
+	.paddingLeft
+	{
+		padding-left: 0;
+	}
+	.paddingRight
+	{
+		padding-right:0;
+		
+	}
+	.hyphen
+	{
+		font-size: 24px;
+		font-weight: bold;
+		margin-left: 25px;
+		color: black;
+	}
+	#saveButtonNewPost
+	{
+		margin: 5px auto 0 auto;
+	}
+	#pageTitle
+	{
+		margin-bottom: 30px;
+	}
+	
+	#upload {
+    opacity: 1;
+	position: relative;
+	}
+
+	#upload-label 
+	{
+		position: relative;
+	}
+
+	.image-area 
+	{
+		border: 2px dashed rgba(255, 255, 255, 0.7);
+		position: relative;
+		bottom: 10px;
+		width: 150px;
+		height: 150px; 
+		background-image: url("../images/background_image.jpg")
+	}
+
+	#imageResult
+	{
+		width: 150px;
+		height: 150px;
+	}
+	.upload-area	
+	{
+		border:1px solid black;
+		position: relative;
+		bottom: 10px;
+		width: 180px;
+		height: 101px; 
+		background-image: url("../images/signature_background.jpg");
+	}
+	#uploadResult
+	{
+		padding:0;
+		width: 180px;
+		height: 101px; 
+	}
+	#imagePanel
+	{
+		float: right;
+	}
+	input[type="file"]
+	{
+		display: none;
+	}
+	#formFile
+	{
+		display: block;
+	}
+	.custom-file-upload
+	{
+		border: 1px solid #ccc;
+		display: inline-block;
+		margin-left: 15px;
+		padding: 6px 12px;
+		cursor: pointer;
+	}
+	#CNIChyphen
+	{
+		margin-right: 13px;
+	}
+	
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button 
+	{
+	-webkit-appearance: none;
+	margin: 0;	
+	}
+
+/* Firefox */
+	input[type=number]
+	{
+		-moz-appearance: textfield;
+	}
+	
+	#istRow, #secondRowNominateTrainee, #secondRowViewTrainee, #secondRowNewTrainee, #secondRowNomineeDetails, #secondRowViewNominee #thirdRow, #fourthRow, #fifthRow, #sixthRow, #seventhRow
+	{
+		margin-bottom: 40px;
+	}
+	#saveButtonNewTrainee
+	{
+		margin: 10px auto 0 auto;
+	}
+	
+	#saveButtonNomineeDetails, #resetButtonNomineeDetails
+	{
+		margin: 5px 0 20px 0;
+	}
+	#istRowNomineeDetails
+	{
+		margin-bottom: 70px;
+	}
+	#action
+	{
+		width: 120px;
+	}
+	#saveButtonTraineeDetails, #resetButtonTraineeDetails
+	{
+		margin-top: 5px;
+	}
+	#secondRowTraineeDetails
+	{
+		margin: 30px 0 70px 0;
+	}
+	#campusNameTraineeDetails
+	{
+		padding-left:0;
+	}
+	#thirdRowTraineeDetails
+	{
+		margin-left: 7px;
+	}
+	.CNIC
+	{
+		font-size: 8px;
+	}
+	#newPostInfoTable
+	{
+		margin-top: 50px;
+	}
+	.name
+	{
+		width: 300px;
+	}
+	#edit
+	{
+		width: 100px;
+	}
+	.sectionBox
+	{
+		height: 100%;
+		width: 85%;
+		transition: 0.5s;
+		box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2), 5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.sectionBox:hover
+	{
+		transform: translateX(10%);
+		z-index:2;
+	}
+	
+	.sectionText
+	{
+		font-size: 120%;
+		font-weight: bold;
+	}
+	.marginLeftLong
+	{
+		margin: 1% 0 0 23%;
+		color: black;
+	}
+	.marginLeftShort
+	{
+		margin: 1% 0 0 7%;
+		color: black;
+	}
+	.link
+	{
+		text-decoration: none;
+	}
+	#hello
+	{
+		text-decoration:none;
+	}
+	.aWidth
+	{
+		width: 50%;
+	}
+	#sWidth
+	{
+		width: 36%;
+	}
+	#tWidth
+	{
+		width: 36%;
+		
+	}
+	#eWidth
+	{
+		width: 36%;
+	}
+	#rWidth
+	{
+		width:36%;
+	}
+	.linkText
+	{
+		font-size: 20px;
+	}
+	#descriptionLabel
+	{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	#approvalButtonPrincipal
+	{
+		margin-top: 20px; 
+		color: white;
+		border-radius: 7px;
+		word-wrap: break-word;
+		width: 170px;
+	}
+	#approvalButtonRCS
+	{
+		margin-top: 20px; 
+		color: white;
+		border-radius: 7px;
+		word-wrap: break-word;
+		width: 90px;
+	}
+	#permissionButton
+	{
+		width: 180px;
+		border-radius: 7px;
+	}
+	.imagePrincipalAWP
+	{
+		width: 50%;
+		height: 85%;
+		margin-left: 3%;		
+	}
+	.imageIcon
+	{
+		width: 50%;
+		height: 100%;
+		margin-left: 3%;
+	/*	background-color: red; */
+	}
+	.statsDiv
+	{
+		width: 45%;
+		/* background-color:red; */
+	}
+	.statsDivParameters
+	{
+		font-weight: bold;
+		border: none;
+		width: 80px;
+		background-color:yellow;
+		transition:1s;
+	}
+	.statsDivParameters:hover
+	{
+		transform: scale(1.1);
+		z-index:2;
+	}
+	.statsDivAcceptNumber
+	{
+		margin-left: 15px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.statsDivPendingNumber
+	{
+		margin-left: 15px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.statsDivRejectNumber
+	{
+		margin-left: 15px;
+		font-size: 20px;
+		font-weight:bold;
+	}
+	#AWPColor
+	{
+		background-color: #B1DDDD;
+	}
+	#SyllabusColor
+	{
+		background-color: #9AD6D6;
+	}
+	#TimeColor
+	{
+		background-color: #CDEBEC;
+	}
+	#ExaminationColor
+	{	
+		background-color:#DA542E;
+	}
+	#reportColor
+	{
+		background-color:#6698E2;
+	}
+	#syllabus_View
+	{
+		width: 95%;
+		height: 600px;
+		border: 2px solid gray;
+	}
+	#CoursesClassesSelection
+	{
+		margin: 4% 0 4% 0;
+		width: 30%;
+		height: 400px;
+		border: 2px solid gray;
+		background-color: #9EC1EF;
+	}
+	#dropdownDiv
+	{
+		margin-top: 140px; 	
+		width: 90%;
+	}
+	.dropdownContent
+	{
+		font-size: 110%;
+	}
+	#submitAttendance
+	{
+		width: 9%;
+	}
+	
+	
+/* ============ desktop view ============ */
+
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	
+/* ============ small devices .end// ============ */
+
+#main_nav
+{
+	padding: 5px;
+}
+
+input[type='time']::-webkit-calendar-picker-indicator 
+{
+	position: absolute;
+	padding-left: 19%;	
+}
+#approvalButtonDesignTimeTable, #approvalButtonDesignShortCourse
+{
+	width: 260px;
+	border-radius: 8px;
+}
+.errordiv
+{
+	color: red;
+}
+.weekOfTheDay
+{
+	background-color: #28B779;
+	color: white;
+	font-size: 20px;
+	height: 35px;
+	width: 115px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+#addMore
+{
+	border-radius: 8px; 
+}
+.replicateMondayLabel
+{
+	font-size: 20px;
+	height: 35px;
+	border-radius: 7px;
+}
+
+#referenceNo
+{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+.buttonDiv
+{
+	padding-left: 90px;
+}
+#timetableNote
+{
+	color: black;
+	font-size: 16px;
+}
+#noViewTimetable
+{
+	padding-left: 12px;
+}
+.viewTimetablecenter
+{
+	padding-left: 250px !important;
+}
+#dateViewTimetable
+{
+	padding-left: 28px;
+}
+#Timetable1, #Timetable2, #practicalDateSheet, #examDateSheet
+{
+	text-align: center;
+}
+input[type='date']::-webkit-calendar-picker-indicator 
+{
+    position: relative;
+	padding-left: 75%;
+}
+
+#boxRow
+{
+	background-color: yellow;
+}
+.pendingColorLong
+{
+	background-color: #FFAC65;
+}
+.pendingColorShortIn
+{
+	background-color: #FF9033;
+}
+.pendingColorShortOff
+{
+	background-color: #FEC89A;
+}
+#TTPNumber
+{
+	margin:0;
+	padding:0;
+}
+@media(max-width: 320px)
+{ 
+	#main_heading
+	{
+		color: #0c838b;
+		font-weight: bold;
+		font-size: 10px;
+	}
+	#sub_heading
+	{
+		font-size: 10px;
+		color: #8c8b8f;
+	}
+}
+#addPaper
+{
+	background-color: #019899;
+	color: white;
+	font-size: 20px;
+	height: 35px;
+	width: 135px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+#addPractical
+{
+	background-color: #019899;
+	color: white;	
+	font-size: 20px;
+	height: 35px;
+	width: 155px;
+	padding-left: 12px;
+	border-radius: 7px;
+}
+#textDateSheet
+{
+	height: 300px;
+}
+.checkBoxResult
+{
+	margin: 37px 0 0 0;
+}
+
+#attendanceButtonDiv
+{
+	margin-top: 130px;
+}
+
+.btn-back
+{
+	width: 85px;
+}
+
+input:invalid 
+{
+  border: solid red 3px;
+}
+.uploadAreaViewResult
+{
+	position: relative;
+	bottom: 10px;
+	width: 180px;
+	height: 110px; 
+}
+.sigImage
+{	
+	width: 180px;
+	height:180px;
+	border-radius: 50%;
+}
+#topicPadding
+{
+	padding-left : 60px;
+}
+#incharge
+{
+	width: 50px;
+}
+#labelMarginTop
+{
+	margin-top: 37px;
+}
+#className
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+#saveButtonDesignAR
+{
+	width: 100px;
+}
+.inputField
+{
+	color: black;
+}
+#marginTop
+{
+	margin-top: 37px;
+}
+#refresherCertificate
+{
+	width:100%; 
+	text-align:center;
+}
+
+/* override styles when printing */
+@media print 
+{
+	#header, footer, nav, #pageInfo, #buttonRow, #searchControls, #searchFilters, .action
+	{
+        display: none !important;
+    }
+	#certificateDiv
+	{
+		width: 0 auto !important;
+		transform: scale(1.4);
+		margin-top: 195px;
+	}
+	@page
+	{
+		size: A4 portrait;  /* width height */
+	}
+}
+#certificateDiv
+{
+	width: 650px;
+	height: 900px;
+	background-color: #FFFFFF;
+	border: 2px solid black;
+}
+.outer
+{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	/* background-color: yellow; */
+}
+.box
+{
+	width: 610px;
+    height: 50px;
+/*	background-color: gray; */
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+
+.triangle-left 
+{
+	width: 100%;
+	height: 100%;
+ /* background-color: red; */ 
+	border-left: 150px solid #28AE57;
+	border-bottom: 150px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.inner
+{
+	z-index: 9;
+	/*background-color: red; */
+}
+.triangle-right
+{
+	position:relative;
+    top:745px;
+    left: 496px; 
+	width:0;
+	height: 0;
+	border-right: 150px solid #28AE57;
+	border-top: 150px solid transparent;
+}
+.outerRectangle
+{
+	margin: 12px 4px 0 9px;
+    width: 25px;
+    height: 25px;
+	border: 1px solid black;
+    /* Rotate div */
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.innerRectangle
+{
+	margin:4px 0 0 4px;
+    width: 14px;
+    height: 14px;
+	border: 1px solid black;
+	background-color: #271C24;
+}
+.horizontalBorderDiv
+{
+	margin: 23px 0 0 6px !important;
+	width: 	520px;
+	background-color: #0F0303;
+	height: 1px;
+	border: none;
+}
+.leftSideDiv
+{
+	width: 25px;
+	height: 750px;
+/* background-color: red; */
+	z-index: 10;
+	position: absolute;
+	top: 70px;
+	left: 25px;
+}
+.verticalLine1
+{
+	width: 1px;
+	height: 750px;
+	background-color: #E7DAA6;
+	border: none;
+	margin: 5px 0 0 4px;
+}
+.verticalLine2
+{
+	width: 1px;
+	height: 750px;
+	background-color: #0F0303;
+	border: none;
+	margin: 5px 0 0 11px;
+}
+#FormCertificate
+{
+	background-color: #F5F2ED;
+	margin-top: 17px;
+	border-radius: 7px;
+	padding: 20px;
+}
+.boxBottom
+{
+	width: 610px;
+    height: 50px;
+/*	background-color: gray; */
+	position: absolute;
+	top: 820px;
+	left: 20px;
+}
+.rightSideDiv
+{
+	width: 25px;
+	height: 750px;
+/* background-color: red; */
+	z-index: 10;
+	position: absolute;
+	top: 70px;
+	left: 605px;
+}
+.verticalLineRight1
+{
+	width: 1px;
+	height: 750px;
+	background-color: #0F0303;
+	border: none;
+	margin: 5px 0 0 0;
+}
+.verticalLineRight2
+{
+	width: 1px;
+	height: 750px;
+	background-color: #E7DAA6;
+	border: none;
+	margin: 5px 0 0 11px;
+}
+.contentDiv
+{
+	z-index: 9;
+	width: 550px;
+	height: 640px;
+/*	background-color: red; */
+	position: absolute;
+	top: 70px;
+	left: 50px;
+}
+.mainHeader
+{
+	width: 550px;
+	height: 70px;
+/*	background-color: yellow; */
+}
+.logoGovtCertificate
+{
+	margin-left: 15px;
+}
+.headingContent
+{
+	width: 350px;
+	height: 70px;
+/* background-color: red; */
+}
+.heading
+{
+	font-weight: bold;
+}
+.paraCertificate
+{
+	color: black;
+}
+.traineeDetails
+{
+	font-size: 14px;
+	font-weight: 500;
+}
+.rowDiv
+{
+	width: 550px !important;
+	height: 10px;
+/*	background-color: red !important; */
+}
+.labelName
+{	
+	width: 110px;
+/*background-color: green; */
+}
+.InputDiv
+{
+	width: 420px;
+}
+.valueInput
+{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+.valueInput:focus, .valueInput:active
+{
+  border-color: transparent !important;
+  border-bottom: 1px solid black !important;
+}
+.of, .to
+{
+	width: 15px;
+}
+.InputDistrict
+{
+	width: 345px;
+}
+.textDistrict
+{
+	width: 170px;
+}
+.inputSessionStart, .inputSessionEnd
+{
+	width: 100px;
+}
+.description
+{
+	width: 320px;
+}
+.examMonth
+{
+	width: 80px;
+}
+.description2
+{
+	width: 200px;
+}
+.marginLeft
+{
+	margin-left: 135px;
+}
+.subjectNames
+{
+	width: 275px;
+	height: 210px;
+	margin-left: 35px;
+/*	background-color: green; */
+}
+.marksDiv
+{
+	width: 240px;
+	height: 120px;
+/*	background-color: gray; */
+}
+.totalMarks, .obtainedMarks
+{
+	width: 120px;
+}
+.inputTotalMarks, .inputObtainMarks
+{
+	width: 70px;
+}
+.clear-floating
+{
+	clear: both;
+}
+.principal
+{
+	width: 150px;
+	height: 90px;
+	/*background-color:red;*/
+}
+.uploadAreaViewCertificate
+{
+	width: 150px;
+	height: 70px;
+/*	background-color: yellow; */
+}
+.rowDivSig
+{
+	width: 150px;
+	height: 160px;
+	position: absolute;
+	top: 600px;
+	left: 400px;
+}
+#uploadResultCertificate
+{
+	padding:0;
+	width: 100px;
+	height: 56px; 
+}
+.sigImageCertificate
+{
+	width: 100px;
+	height:56px;
+	border-radius: 50%;
+}
+.principalShort
+{
+	font-weight: bold;
+}
+input[id="report"]
+{
+	display: block;
+}

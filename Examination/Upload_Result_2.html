@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Project CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+		<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	
+   <title>Campus Management System</title>
+   </head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+			<div id="header">
+				<div class="row">
+					<div id="left_menu" class="col-sm-7 float-start">
+						<div id="image_logo" class="float-start">
+						<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+						</div>
+						<div class="float-start">
+							<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+						</div>
+					</div>
+					<div id="right_menu" class=" navbar-light float-end col-sm-5">
+						<div id="userNav">
+						
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								DG ADMIN
+							  </a>
+							  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Profile</a></li>
+								<li><a class="dropdown-item" href="#">Settings</a></li>
+								<li><a class="dropdown-item" href="#">Logout</a></li>
+							  </ul>
+							</li>
+							</ul>
+						</div>
+						<!--<p id="username">DG ADMIN</p> -->
+						<div id="image_user" class="float-end">
+						<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+			  <ul class="navbar-nav">
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Annual Work Plan</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Long Duration Class</a></li>
+					<li> <a class="dropdown-item" href="#">Short Duration Course</a></li>
+					<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+					<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HR</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">New Post</a></li>
+					<li> <a class="dropdown-item" href="#">Filled/Vacant Post</a></li>		
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trainee Enrolement</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Add a New Trainee</a></li>
+					<li> <a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+					<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+					<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">Attendance</a></li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Timetable</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Timetable &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Timetable</a></li>
+						<li><a class="dropdown-item" href="#">View Timetable</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Tentative Training Programme &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Tentative Training Programme</a></li>
+						<li><a class="dropdown-item" href="#">View Tentative Training Programme</a></li>
+						</ul>
+					</li>					
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Syllabus</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Direct AR & Inspector Syllabus</a></li>
+					<li> <a class="dropdown-item" href="#">Promottee AR & Inspector Syllabus</a></li>
+					<li><a class="dropdown-item" href="#">Direct Sub-Inspector Syllabus</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Examination</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Datesheet &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Datesheet</a></li>
+						<li><a class="dropdown-item" href="#">View Datesheet</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Result &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Upload Result</a></li>
+						<li><a class="dropdown-item" href="#">View Result</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Certificate &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Certificate</a></li>
+						<li><a class="dropdown-item" href="#">Download Certifictae</a></li>
+						</ul>
+					</li>	
+						
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Reports</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Monthly Report</a></li>
+					<li> <a class="dropdown-item" href="#">Annual Report</a></li>
+				  </ul>
+				</li>
+				
+			  </ul>
+			</div>
+			<!-- navbar-collapse.// -->
+			</div>
+			<!-- container-fluid.// -->
+		</nav>
+		
+		<div id="pageInfo">				
+			<div id="deptLogo" class="col-sm-4">
+				<img id="logoImg" src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+	
+		<div id="Form" class="col-lg-12">
+			
+			<div class="row">
+				<div class="col-sm-2">
+					<label class="form-label">Total Marks</label>
+					<input class="form-control" type="number" value="" id="totalMarks">
+					<div class="errordiv" id="errorTotalMarks"></div>
+				</div>
+				
+				<div class="col-sm-2">
+					<label class="form-label">Pass Marks %</label>
+					<input class="form-control" type="number" value="" min="1" max = "100" step = "1" id="passMarks">
+					<div class="errordiv" id="errorPassMarks"></div>
+				</div>
+				
+				<div class="col-sm-2">
+					<label for = "Papers checked By" class= "form-label">Papers checked by</label>
+					<select class="form-select" id="papersCheckedBy">
+						<option selected>Dropdown</option>
+						<option value="1">Include instructor and junior instructor of that institute</option>
+					</select>
+					<div class="errordiv" id="errorPapersCheckedBy"></div>
+				</div>
+				
+				<div class="col-sm-2">
+					<label for = "Approved by" class= "form-label">Approved by</label>
+					<textarea class="form-control" id="approvedBy"></textarea>
+					<div class="errordiv" id="errorApprovedBy"></div>
+				</div>
+				
+				<div class="col-sm-2">
+					<label for = "Attested by" class= "form-label">Attested by</label>
+					<textarea class="form-control" id="attestedBy"></textarea>
+				</div>
+				
+			</div>
+			
+			<div class="row mt-5">
+			
+				<div class="col-sm-2">
+					<label class="form-label"></label>
+					<input class="form-control mt-2" value="Ist position" readonly>
+				</div>
+				<div class="col-sm-2">
+					<label for = "Name of Trainee" class= "form-label">Name of Trainee</label>
+					<select class="form-select" id="nameTrainee1">
+						<option selected>Dropdown</option>
+						<option value="1">All trainees registered in this course will be here</option>
+					</select>
+					<div class="errordiv" id="nameTraineeError1"></div>
+				</div>
+				<div class="col-sm-2">
+					<label class="form-label">Father's Name</label>
+					<input class="form-control" value="auto-populated" readonly>
+				</div>
+				
+				<div class="col-sm-1">
+					<div class="form-check checkBoxResult">
+						<input class="form-check-input" type="radio" name="flexRadioDefault1" class="flexRadioRegular" checked>
+						<label class="form-label">Regular</label>
+					</div>
+				</div>
+				<div class="col-sm-1">
+					<div class="form-check checkBoxResult">
+						<input class="form-check-input" type="radio" name="flexRadioDefault1" class="flexRadioPrivate">
+						<label class="form-label">Private</label>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<label class="form-label">Marks Obtained</label>
+					<input class="form-control" type="number" value="" id="marks1">
+					<div class="errordiv" id="errorMarks1"></div>
+				</div>	
+			</div>
+			
+			<div class="row mt-4">
+			
+				<div class="col-sm-2">
+					<label class="form-label"></label>
+					<input class="form-control mt-2" value="2nd position" readonly>
+				</div>
+				<div class="col-sm-2">
+					<label for = "Name of Trainee" class= "form-label">Name of Trainee</label>
+					<select class="form-select" id="nameTrainee2">
+						<option selected>Dropdown</option>
+						<option value="1">All trainees registered in this course will be here</option>
+					</select>
+					<div class="errordiv" id="nameTraineeError2"></div>
+				</div>
+				<div class="col-sm-2">
+					<label class="form-label">Father's Name</label>
+					<input class="form-control" value="auto-populated" readonly>
+				</div>
+				
+				<div class="col-sm-1">
+					<div class="form-check checkBoxResult">
+						<input class="form-check-input" type="radio" name="flexRadioDefault2" class="flexRadioRegular" checked>
+						<label class="form-label">Regular</label>
+					</div>
+				</div>
+				<div class="col-sm-1">
+					<div class="form-check checkBoxResult">
+						<input class="form-check-input" type="radio" name="flexRadioDefault2" class="flexRadioPrivate">
+						<label class="form-label">Private</label>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<label class="form-label">Marks Obtained</label>
+					<input class="form-control" type="number" value="" id="marks2">
+					<div class="errordiv" id="errorMarks2"></div>
+				</div>	
+			</div>
+			
+			<div class="row mt-4">
+			
+				<div class="col-sm-2">
+					<label class="form-label"></label>
+					<input class="form-control mt-2" value="3rd position" readonly>
+				</div>
+				<div class="col-sm-2">
+					<label for = "Name of Trainee" class= "form-label">Name of Trainee</label>
+					<select class="form-select" id="nameTrainee3">
+						<option selected>Dropdown</option>
+						<option value="1">All trainees registered in this course will be here</option>
+					</select>
+					<div class="errordiv" id="nameTraineeError3"></div>
+				</div>
+				<div class="col-sm-2">
+					<label class="form-label">Father's Name</label>
+					<input class="form-control" value="auto-populated" readonly>
+				</div>
+				
+				<div class="col-sm-1">
+					<div class="form-check checkBoxResult">
+						<input class="form-check-input" type="radio" name="flexRadioDefault3" class="flexRadioRegular" checked>
+						<label class="form-label">Regular</label>
+					</div>
+				</div>
+				<div class="col-sm-1">
+					<div class="form-check checkBoxResult">
+						<input class="form-check-input" type="radio" name="flexRadioDefault3" class="flexRadioPrivate">
+						<label class="form-label">Private</label>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<label class="form-label">Marks Obtained</label>
+					<input class="form-control" type="number" value="" id="marks3">
+					<div class="errordiv" id="errorMarks3"></div>
+				</div>	
+			</div>
+			
+			<div class="row mt-4" id="addMoreDiv">
+				<div class="col-sm-2 mx-auto">
+					<button type="submit" class="btn btn-primary addMore" value="Add More Result">Add More</button>
+				</div>
+			</div>
+			
+			<div class="row mt-4 me-3">
+				<div class="col-sm-3 mx-auto">
+					<button type="submit" class="btn btn-primary mt-4" value="Save" id="approvalButtonUploadResult">Forward for Principal's Approval</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>	
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			// make it as accordion for smaller screens
+			if (window.innerWidth < 992) {
+
+			  // close all inner dropdowns when parent is closed
+			  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+				everydropdown.addEventListener('hidden.bs.dropdown', function () {
+				  // after dropdown is hidden, then find all submenus
+					this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+					  // hide every submenu as well
+					  everysubmenu.style.display = 'none';
+					});
+				})
+			  });
+
+			  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+				element.addEventListener('click', function (e) {
+					let nextEl = this.nextElementSibling;
+					if(nextEl && nextEl.classList.contains('submenu')) {	
+					  // prevent opening link if link needs to open dropdown
+					  e.preventDefault();
+					  if(nextEl.style.display == 'block'){
+						nextEl.style.display = 'none';
+					  } else {
+						nextEl.style.display = 'block';
+					  }
+
+					}
+				});
+			  })
+			}
+			// end if innerWidth
+			});
+			
+			var count =4, prevCount=3, rowDiv, checkValidation = true, totalMarksValidation = true;
+			
+			$('.addMore').click(function(){
+			
+			if(prevCount>3)
+			{
+				checkValidation = formValidation(); 
+				totalMarksValidation = totalMarks();
+			}
+			
+			if(checkValidation == true && totalMarksValidation == true)
+			{
+			
+				if(prevCount >3)	
+				{
+					$('#nameTrainee' + prevCount.toString()).attr('disabled', true);
+					$('#traineeStatus' + prevCount.toString()).attr('disabled', true);
+					$('#marks' + prevCount.toString()).attr('readonly', 'readonly');
+					 
+					if($('#traineeStatus' + prevCount.toString()).val() == '2')
+						$('#remarks' + prevCount.toString()).attr('readonly', 'readonly');
+				}
+				
+				//Creating row div start
+				rowDiv = document.createElement('div');
+				rowDiv.classList.add('row');
+				rowDiv.classList.add('mt-4');
+				//Creating row div end
+				
+				//Creating Trainee name dropdown start
+				var dropDownTraineeName = document.createElement("div");
+				rowDiv.appendChild(dropDownTraineeName);
+				dropDownTraineeName.classList.add('col-sm-2');
+				
+				/* Trainee name label code start*/
+				var labelTraineeName = document.createElement("label");
+				dropDownTraineeName.appendChild(labelTraineeName);
+				labelTraineeName.classList.add('form-label');
+				labelTraineeName.htmlFor ="Name of Trainee";
+				labelTraineeName.innerHTML ="Name of Trainee";
+				/* Trainee name label code end*/
+				
+				/* Trainee name select code start*/
+				var selectTraineeName = document.createElement("select");
+				dropDownTraineeName.appendChild(selectTraineeName);
+				selectTraineeName.classList.add('form-select');
+				selectTraineeName.setAttribute('id', 'nameTrainee' + count.toString());
+				
+				/*creating ist option for dropdown Trainee name start*/
+				var option1TraineeName =document.createElement('option');
+				var option1TextTraineeName = document.createTextNode ('Dropdown');
+			
+				//set option text
+				option1TraineeName.appendChild(option1TextTraineeName);
+				// and option value
+				option1TraineeName.setAttribute ('value', '1');
+				option1TraineeName.setAttribute('selected', 'selected'); //setting the option as the selected one
+				
+				//add the option to the select input
+				selectTraineeName.appendChild(option1TraineeName);
+				/*creating ist option for dropdown subject name end*/
+				
+				/*creating 2nd option for dropdown subject name start*/
+				var option2TraineeName =document.createElement('option');
+				var option2TextTraineeName = document.createTextNode ('All trainees registered in this course will be here');
+			
+				//set option text
+				option2TraineeName.appendChild(option2TextTraineeName);
+				// and option value
+				option2TraineeName.setAttribute ('value', '2');
+				
+				//add the option to the select input
+				selectTraineeName.appendChild(option2TraineeName);
+				/*creating 2nd option for dropdown subject name end*/
+				
+				//Creating error div Trainee name start
+				var errorTraineeName = document.createElement('div');
+				dropDownTraineeName.appendChild(errorTraineeName);
+				errorTraineeName.classList.add('errordiv');
+				errorTraineeName.setAttribute('id', 'nameTraineeError' + count.toString());
+				//Creating error div Trainee name end
+				
+				//Creating Trainee name dropdown end
+				
+				/* Input Father's Name div start*/
+				var fatherNameDiv= document.createElement('div');
+				rowDiv.appendChild(fatherNameDiv);
+				fatherNameDiv.classList.add('col-sm-2');
+				
+				/* Father name label start*/
+				var labelFatherName = document.createElement('label');
+				fatherNameDiv.appendChild(labelFatherName);
+				labelFatherName.classList.add('form-label');
+				labelFatherName.htmlFor = "Father Name";
+				labelFatherName.innerHTML = "Father's Name";
+				/* Father name label end*/
+				
+				/* Father name input start*/
+				var inputFatherName = document.createElement('input');
+				fatherNameDiv.appendChild(inputFatherName);
+				inputFatherName.classList.add('form-control');
+				inputFatherName.setAttribute('value', 'auto-populated');
+				inputFatherName.setAttribute('readonly', 'readonly');
+				/* Father name input end*/
+							
+				/* Input Father's Name div end*/
+				
+				// Creating Regular checkBox Div start
+				var regularCheckBoxDiv = document.createElement('div');
+				rowDiv.appendChild(regularCheckBoxDiv);
+				regularCheckBoxDiv.classList.add('col-sm-1');
+				
+				//Creating div for margin-top start
+				var mTForRegularBox = document.createElement('div');
+				regularCheckBoxDiv.appendChild(mTForRegularBox);
+				mTForRegularBox.classList.add('checkBoxResult');
+				mTForRegularBox.classList.add('form-check');
+				//Creating div for margin-top end
+				
+				/* Regular CheckBox input start*/
+				var inputRegularCheckBox = document.createElement('input');
+				mTForRegularBox.appendChild(inputRegularCheckBox);
+				inputRegularCheckBox.classList.add('form-check-input');
+				inputRegularCheckBox.setAttribute('type', 'radio');
+				inputRegularCheckBox.setAttribute('checked', 'checked');
+				inputRegularCheckBox.setAttribute('name', 'flexRadioDefault' + count.toString());
+				/* Regular CheckBox input end*/
+				
+				/* Regular CheckBox label start*/
+				var labelRegularCheckBox = document.createElement('label');
+				mTForRegularBox.appendChild(labelRegularCheckBox);
+				labelRegularCheckBox.classList.add('form-label');
+				labelRegularCheckBox.innerHTML = "Regular";
+				/* Regular CheckBox label end*/
+				
+				/* Regular CheckBox error start */
+				var errorRegularCheckBox = document.createElement('div');
+				mTForRegularBox.appendChild(errorRegularCheckBox);
+				errorRegularCheckBox.classList.add('errordiv');
+				errorRegularCheckBox.setAttribute('id', 'regularError' + count.toString());
+				/* Regular CheckBox error end */
+				
+				/* Creating Regular checkBox Div end */
+				
+				// Creating Private checkBox Div start
+				var privateCheckBoxDiv = document.createElement('div');
+				rowDiv.appendChild(privateCheckBoxDiv);
+				privateCheckBoxDiv.classList.add('col-sm-1');
+				
+				//Creating div for margin-top start
+				var mTForPrivateBox = document.createElement('div');
+				privateCheckBoxDiv.appendChild(mTForPrivateBox);
+				mTForPrivateBox.classList.add('checkBoxResult');
+				mTForPrivateBox.classList.add('form-check');
+				//Creating div for margin-top end
+				
+				/* Private CheckBox input start*/
+				var inputPrivateCheckBox = document.createElement('input');
+				mTForPrivateBox.appendChild(inputPrivateCheckBox);
+				inputPrivateCheckBox.classList.add('form-check-input');
+				inputPrivateCheckBox.setAttribute('type', 'radio');
+				inputPrivateCheckBox.setAttribute('name', 'flexRadioDefault' + count.toString());
+				/* Private CheckBox input end*/
+				
+				/* Private CheckBox label start*/
+				var labelPrivateCheckBox = document.createElement('label');
+				mTForPrivateBox.appendChild(labelPrivateCheckBox);
+				labelPrivateCheckBox.classList.add('form-label');
+				labelPrivateCheckBox.innerHTML = "Private";
+				/* Private CheckBox label end*/
+				
+				/* Private CheckBox error start */
+				var errorPrivateCheckBox = document.createElement('div');
+				mTForPrivateBox.appendChild(errorPrivateCheckBox);
+				errorPrivateCheckBox.classList.add('errordiv');
+				errorPrivateCheckBox.setAttribute('id', 'privateError' + count.toString());
+				/* Private CheckBox error end */
+				
+				/* Creating Private checkBox Div end */
+				
+				/* Input marks obtained div start*/
+				var marksDiv= document.createElement('div');
+				rowDiv.appendChild(marksDiv);
+				marksDiv.classList.add('col-sm-2');
+				
+				/* Marks Div label start*/
+				var labelMarks = document.createElement('label');
+				marksDiv.appendChild(labelMarks);
+				labelMarks.classList.add('form-label');
+				labelMarks.innerHTML = "Marks Obtained";
+				/* Marks Div label end*/
+				
+				/* Marks Div input start*/
+				var inputMarks = document.createElement('input');
+				marksDiv.appendChild(inputMarks);
+				inputMarks.classList.add('form-control');
+				inputMarks.setAttribute('type', 'number');
+				inputMarks.setAttribute('id', 'marks' + count.toString());
+				/* Marks Div input end*/
+				
+				/* Marks Div error start */
+				var errorMarks = document.createElement('div');
+				marksDiv.appendChild(errorMarks);
+				errorMarks.classList.add('errordiv');
+				errorMarks.setAttribute('id','marksError' + count.toString());
+				/* Marks Div error end */
+				
+				/* Input marks obtained div end*/
+				
+				//Creating Trainee status dropdown start
+				var dropDownTraineeStatus = document.createElement("div");
+				rowDiv.appendChild(dropDownTraineeStatus);
+				dropDownTraineeStatus.classList.add('col-sm-2');
+				
+				/* Trainee status label code start*/
+				var labelTraineeStatus = document.createElement("label");
+				dropDownTraineeStatus.appendChild(labelTraineeStatus);
+				labelTraineeStatus.classList.add('form-label');
+				labelTraineeStatus.htmlFor ="Trainee Status";
+				labelTraineeStatus.innerHTML ="Trainee Status";
+				/* Trainee status label code end*/
+				
+				/* Trainee status select code start*/
+				var selectTraineeStatus = document.createElement("select");
+				dropDownTraineeStatus.appendChild(selectTraineeStatus);
+				selectTraineeStatus.classList.add('form-select');
+				selectTraineeStatus.setAttribute('id', 'traineeStatus' + count.toString());
+				selectTraineeStatus.setAttribute('onchange', 'selectFunction(this.value)');
+				
+				/*creating ist option for dropdown Trainee status start*/
+				var option1TraineeStatus =document.createElement('option');
+				var option1TextTraineeStatus = document.createTextNode ('Pass');
+			
+				//set option text
+				option1TraineeStatus.appendChild(option1TextTraineeStatus);
+				// and option value
+				option1TraineeStatus.setAttribute ('value', '1');
+				option1TraineeStatus.setAttribute('selected', 'selected'); //setting the option as the selected one
+				
+				//add the option to the select input
+				selectTraineeStatus.appendChild(option1TraineeStatus);
+				/*creating ist option for dropdown Trainee status end*/
+				
+				/*creating 2nd option for dropdown Trainee status start*/
+				var option2TraineeStatus =document.createElement('option');
+				var option2TextTraineeStatus = document.createTextNode ('Fail');
+			
+				//set option text
+				option2TraineeStatus.appendChild(option2TextTraineeStatus);
+				// and option value
+				option2TraineeStatus.setAttribute ('value', '2');
+				
+				//add the option to the select input
+				selectTraineeStatus.appendChild(option2TraineeStatus);
+				/*creating 2nd option for dropdown Trainee status end*/
+				
+				//Creating Trainee status dropdown end
+				
+				/* Textarea Remarks div start*/
+				var remarksDiv= document.createElement('div');
+				rowDiv.appendChild(remarksDiv);
+				remarksDiv.classList.add('col-sm-2');
+				remarksDiv.setAttribute('id', 'remarksEncapsulate' + count.toString());
+				remarksDiv.style.display = 'none';
+				
+				/* Remarks Div label start*/
+				var labelRemarks = document.createElement('label');
+				remarksDiv.appendChild(labelRemarks);
+				labelRemarks.classList.add('form-label');	
+				labelRemarks.innerHTML = "Remarks";
+				/* Remarks Div label end*/
+				
+				/* Remarks Div textarea start*/
+				var textareaRemarks = document.createElement('textarea');
+				remarksDiv.appendChild(textareaRemarks);
+				textareaRemarks.classList.add('form-control');
+				textareaRemarks.setAttribute('id', 'remarks' + count.toString());
+				/* Remarks Div textarea end*/
+				
+				/* Remarks Div error start */
+				var errorRemarks = document.createElement('div');
+				remarksDiv.appendChild(errorRemarks);
+				errorRemarks.classList.add('errordiv');
+				errorRemarks.setAttribute('id','remarksError' + count.toString());
+				/* Remarks Div error end */
+				
+				/* Textarea Remarks div end*/
+
+				$('#addMoreDiv').before(rowDiv);
+				
+				count++;
+				prevCount++;
+				checkValidation = false;
+			}
+			
+			});
+			
+			$('#approvalButtonUploadResult').click(function(){
+				
+				var i, traineeName, marksObtained, passPercentage, totalMarks, countError = 0;
+				
+				totalMarks = $('#totalMarks').val();
+				passPercentage = $('#passMarks').val();
+				
+				passPercentage = parseInt(passPercentage); //converting it into an integer
+				totalMarks = parseInt(totalMarks);
+				
+				if(isNaN(totalMarks))
+				{
+					$('#errorTotalMarks').html('Total marks field can not be empty!');
+				}
+				
+				else
+					$('#errorTotalMarks').html('');
+
+				if(isNaN(passPercentage))
+				{
+					$('#errorPassMarks').html('Pass Marks field can not be empty!');
+					countError++;
+				}
+							
+				else if(passPercentage < 1 || passPercentage > 100)
+					$('#errorPassMarks').html('Invalid percentage input!');
+					
+				else
+					$('#errorPassMarks').html('');
+
+				if($('#papersCheckedBy').val() == 'Dropdown' || $('#papersCheckedBy').val() == '')
+				{
+					$('#errorPapersCheckedBy').html('Papers checked by field can not be empty!');
+					countError++;
+				}
+				
+				else
+				$('#errorPapersCheckedBy').html('');
+				
+				if($('#approvedBy').val() == '')
+				{
+					$('#errorApprovedBy').html('Approved by field can not be empty!');
+					countError++;
+				}
+				
+				else
+					$('#errorApprovedBy').html('');
+
+				for (i=1; i<4; i++)
+				{
+					traineeName = $('#nameTrainee' + i.toString()).children('option:selected').text();
+					marksObtained = $('#marks' + i.toString()).val();
+					marksObtained = parseInt(marksObtained);
+					
+					if(traineeName == 'Dropdown' || traineeName == '')
+					{
+						$('#nameTraineeError' + i.toString()).html('Trainee Name can not be empty!');
+						countError++;
+					}
+					else
+					$('#nameTraineeError' + i.toString()).html('');
+					
+					if(isNaN(marksObtained))
+					{
+						$('#errorMarks' +i.toString()).html('Marks field can not be empty!');
+						countError++;
+					}
+					
+					else if(marksObtained > totalMarks)
+					{
+					$('#errorMarks' + i.toString()).html('Marks can not be greater than total marks!');
+					countError++;
+					}
+					
+					else
+					$('#errorMarks' + i.toString()).html('');
+				}
+				
+				if(countError==0)
+				return true;
+			});
+		function selectFunction(val)
+			{
+				if(val == "1")
+				$('#remarksEncapsulate' + prevCount.toString()).hide();
+				else
+				$('#remarksEncapsulate' + prevCount.toString()).show();
+			}
+			
+		function formValidation()
+			{
+				var traineeName, marks = 0, remarks, totalMarks =0;
+
+				traineeName = $('#nameTrainee' + prevCount.toString()).children('option:selected').text();
+				marks = $('#marks' + prevCount.toString()).val();
+				totalMarks = $("#totalMarks").val();
+				remarks = $('#remarks' + prevCount.toString()).val();
+				
+				marks = parseInt(marks);
+				totalMarks = parseInt(totalMarks);
+				
+				if(traineeName == 'Dropdown' || traineeName == '')
+				$('#nameTraineeError' + prevCount.toString()).html('Trainee name can not be empty!');
+				
+				else
+				$('#nameTraineeError' + prevCount.toString()).html('');
+				
+				if(isNaN(marks))
+					$('#marksError' + prevCount.toString()).html('Marks field can not be empty!');
+				
+				else if (marks != '' && totalMarks != '' && marks > totalMarks)
+					$('#marksError' + prevCount.toString()).html('Marks can not be greater than total Marks!');
+					
+				else
+					$('#marksError' + prevCount.toString()).html('');
+					
+				if($('#traineeStatus' + prevCount.toString()).val() == '2')
+				{
+					if(remarks == '')
+					$('#remarksError' + prevCount.toString()).html('Remarks field can not be empty!');
+					
+					else
+					$('#remarksError' + prevCount.toString()).html('');
+				}
+				
+				if ($('#nameTraineeError' + prevCount.toString()).html() == '' && $('#marksError' + prevCount.toString()).html() == '' && $('#remarksError' + prevCount.toString()).html() == ''  && $('#traineeStatus' + prevCount.toString()).val() == '2')
+				return true;
+				
+				if ($('#nameTraineeError' + prevCount.toString()).html() == '' && $('#marksError' + prevCount.toString()).html() == '' &&  $('#traineeStatus' + prevCount.toString()).val() == '1')
+				return true;
+				
+			}
+			
+			function totalMarks()
+			{
+				var totalMarks=0, countTotalMarks=0;
+
+				totalMarks = $("#totalMarks").val();
+			
+				totalMarks = parseInt(totalMarks);
+				
+				if(isNaN(totalMarks))
+				{
+					$('#errorTotalMarks').html('Total marks field can not be empty!');
+					countTotalMarks++;
+				}
+				else
+				$('#errorTotalMarks').html('');
+				
+				if(countTotalMarks==0)
+					return true;
+					
+				else
+					return false;
+			}
+
+	</script>
+	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 
+
+	</body>
+
+</html>

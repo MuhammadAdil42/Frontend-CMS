@@ -1,0 +1,551 @@
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Project external CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+
+	<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+
+	<title>Campus Management System</title>
+	
+	</head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	   
+      <div class="container-fluid">	   
+		<div class="row">	
+			<div id="header">
+				<div id="left_menu" class="col-sm-7 float-start">
+					<div id="image_logo" class="float-start">
+					<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+					</div>
+					<div class="float-start">
+						<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+					</div>
+				</div>
+				<div id="right_menu" class=" navbar-light float-end col-sm-5">
+					<div id="userNav">
+					
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							DG ADMIN
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Logout</a></li>
+						  </ul>
+						</li>
+						</ul>
+					</div>
+					<!--<p id="username">DG ADMIN</p> -->
+					<div id="image_user" class="float-end">
+					<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-light bg-light navbar-expanded-lg">
+			<div class="container-fluid">
+				
+				<div id="menu">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+					  <ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Annual Work Plan
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Long Duration Class</a></li>
+							<li><a class="dropdown-item" href="#">Short Duration Course</a></li>
+							<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+							<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							HR
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">New Post</a></li>
+							<li><a class="dropdown-item" href="#">Filled / Vacant Post</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Trainee Enrolement
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Add a New Trainee</a></li>
+							<li><a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+							<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+							<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Attendance</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Timetable
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Time Table</a></li>
+							<li><a class="dropdown-item" href="#">Tentative Training Programme</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Syllabus
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Direct AR & Inspector syllabus</a></li>
+							<li><a class="dropdown-item" href="#">Promottee AR &Inspector syllabus</a></li>
+							<li><a class="dropdown-item" href="#">Direct sub-inspector syllabus</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Examination
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Date Sheet</a></li>
+							<li><a class="dropdown-item" href="#">Result</a></li>
+							<li><a class="dropdown-item" href="#">Certificate</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Reports
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a tabindex="-1" class="dropdown-item" href="#">Monthly Report</a></li>
+							<li><a tabindex="-1" class="dropdown-item" href="#">Annual Report</a></li>	
+						  </ul>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</nav>
+				</div>
+				
+			</div>
+		</nav>
+		
+		<div id="pageInfo">
+				
+			<div id="pageInfoMainHeading" class="col-sm-3">
+				<p style="color: white;">Campus Management System</p><br><span id="pageInfoSubHeading">Trainee Details</span>
+			</div>
+							
+			<div class="col-sm-2"></div>
+							
+			<div id="deptLogo" class="col-sm-6">
+				<img src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+		<div id="Form" class="col-lg-12">
+		  	<div class="row" id="istRow">
+				<div class="col-sm-3">
+					<label for="Name" class="form-label">Name</label>
+					<input type="text" class="form-control" id="Name" placeholder="" onkeypress="return /[a-z /]/i.test(event.key)">
+				</div>
+				
+				<div class="col-sm-3">
+					<label for = "traineeType" class= "form-label">Trainee Type</label>
+					<select class="form-select"  aria-label="Default select example">
+						<option selected>Dropdown</option>
+						<option value="1">New Hire</option>
+						<option value="2">Promotion Case</option>
+					</select>
+				</div> 
+				
+				<div class="col-sm-3">
+					<label for = "CNIC No" class= "form-label">CNIC No</label>
+					<input type="number" class="form-control" placeholder="XXXXX-XXXXXXX-X" pattern="[0-9]{13}" name="cnic">
+				</div>
+				
+				<div class="col-sm-3">
+					<label for = "Cell No." class= "form-label">Cell No</label>
+					<input class="form-control" type="number" placeholder="03xx-xxxxxxx" pattern="[0-9]{11}" id="CellNoTraineeDetails" name="Cell No">
+				</div>
+				
+			</div>
+			
+			<div class="row" id="secondRowTraineeDetails">
+				<div class="col-sm-4" id="campusNameTraineeDetails">
+						<label for = "Campus Name" class= "form-label">Campus Name</label>
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Select</option>
+							<option value="1">Cooperative Training Colledge, Faisalabad</option>
+							<option value="2">Regional Cooperative Training Institute, Bahawalpur	</option>
+						</select>
+				</div>
+				
+				<div class="col-sm-4">
+					<label for = "Course Type" class= "form-label">Course Type</label>
+					<select class="form-select" aria-label="Default select example">
+						<option selected>Dropdown</option>
+						<option value="1">Long Duration Class</option>
+						<option value="2">Short Duration Course (In- Campus)</option>
+						<option value="3">Short Duration Course (Off- Campus)</option>
+					</select>
+				</div>
+				
+				 <div class="col-sm-4">
+					<label for = "Course Name" class= "form-label">Course Name</label>
+						<select class="form-select" aria-label="Default select example">
+						  <option selected>Dropdown</option>
+						  <option value="1">List of courses will be filtered from annual work plan module based upon Course type</option>
+						</select>
+				  </div>
+			
+			</div>
+			
+			 <div class="row" id="thirdRow">
+					 <div class="col-sm-8" id="thirdRowTraineeDetails">
+						 <div class="input-group input-daterange" id="calendarInput">
+							
+						<input type="text" id="start inputCalender" class="form-control text-left mr-2">
+						<label class="ml-3 form-control-placeholder form-label" id="start-p" for="start"> Start date</label>	
+						<span class="fa fa-calendar" id="fa-1"></span>
+						<input type="text" id="end inputCalender" class="form-control text-left ml-2">
+						<label class="ml-3 form-control-placeholder form-label" id="end-p" for="end"> End date</label>						
+						<span class="fa fa-calendar" id="fa-2"></span> 
+						 </div>
+					 </div> 
+					 
+			  </div>
+			  
+			  <div class="row" id="fourthRow">
+				
+				<div class="col-lg-10 col-md-8 col-sm-8"></div>
+				
+				<div class="col-sm-2 col-md-2 col-lg-1 d-grid gap-2">
+					<button type="submit" class="form-control btn-success float-end" id="saveButtonTraineeDetails" value="save">Search</button>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 d-grid gap-2">
+					<button type="reset" class="form-control btn-default float-end hoverColor" id="resetButtonTraineeDetails" value="reset">Reset</button>
+				</div>
+			  </div>
+			  
+			  
+			  <table id="traineeDetails" class="table table-bordered" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th>Name</th>
+									<th>Trainee Type</th>
+									<th>Campus</th>
+									<th>Instructor</th>
+									<th>Course Type</th>
+									<th>Course Name</th>
+									<th id="action">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<td>Umair Latif</td>
+									<td>New Hire</td>
+									<td>CTC,Faisalabad</td>
+									<td>Mr. Ghulam Sarwar,Senior Instructor</td>
+									<td>Long Duration</td>
+									<td>Direct Sub Inspector Training Class</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">2</th>								
+									<td>Umair Latif</td>
+									<td>Promotion Case</td>
+									<td>CTC, Faisalabad</td>
+									<td>Mr. Shafaqat Ali,Junior Instructor</td>
+									<td>Short Duration Course(In-Campus)</td>
+									<td>Re-orientation Course</td>	
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">3</th>								
+									<td>Talha Waheed</td>
+									<td>New Hire</td>
+									<td>RCTI, BWP</td>
+									<td>Muhammad Masood Hussain, Junior Instructor</td>
+									<td>Short Duration Course (Off-Campus)</td>
+									<td>District Level Refresher course</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">4</th>
+									<td>Umair Latif</td>
+									<td>New Hire</td>
+									<td>CTC,Faisalabad</td>
+									<td>Mr. Ghulam Sarwar,Senior Instructor</td>
+									<td>Long Duration</td>
+									<td>Direct Sub Inspector Training Class</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">5</th>								
+									<td>Umair Latif</td>
+									<td>Promotion Case</td>
+									<td>CTC, Faisalabad</td>
+									<td>Mr. Shafaqat Ali,Junior Instructor</td>
+									<td>Short Duration Course(In-Campus)</td>
+									<td>Re-orientation Course</td>	
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">6</th>								
+									<td>Talha Waheed</td>
+									<td>New Hire</td>
+									<td>RCTI, BWP</td>
+									<td>Muhammad Masood Hussain, Junior Instructor</td>
+									<td>Short Duration Course (Off-Campus)</td>
+									<td>District Level Refresher course</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">7</th>
+									<td>Umair Latif</td>
+									<td>New Hire</td>
+									<td>CTC,Faisalabad</td>
+									<td>Mr. Ghulam Sarwar,Senior Instructor</td>
+									<td>Long Duration</td>
+									<td>Direct Sub Inspector Training Class</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">8</th>								
+									<td>Umair Latif</td>
+									<td>Promotion Case</td>
+									<td>CTC, Faisalabad</td>
+									<td>Mr. Shafaqat Ali,Junior Instructor</td>
+									<td>Short Duration Course(In-Campus)</td>
+									<td>Re-orientation Course</td>	
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">9</th>								
+									<td>Talha Waheed</td>
+									<td>New Hire</td>
+									<td>RCTI, BWP</td>
+									<td>Muhammad Masood Hussain, Junior Instructor</td>
+									<td>Short Duration Course (Off-Campus)</td>
+									<td>District Level Refresher course</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<th scope ="row">10</th>
+									<td>Umair Latif</td>
+									<td>New Hire</td>
+									<td>CTC,Faisalabad</td>
+									<td>Mr. Ghulam Sarwar,Senior Instructor</td>
+									<td>Long Duration</td>
+									<td>Direct Sub Inspector Training Class</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">11</th>								
+									<td>Umair Latif</td>
+									<td>Promotion Case</td>
+									<td>CTC, Faisalabad</td>
+									<td>Mr. Shafaqat Ali,Junior Instructor</td>
+									<td>Short Duration Course(In-Campus)</td>
+									<td>Re-orientation Course</td>	
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">12</th>								
+									<td>Talha Waheed</td>
+									<td>New Hire</td>
+									<td>RCTI, BWP</td>
+									<td>Muhammad Masood Hussain, Junior Instructor</td>
+									<td>Short Duration Course (Off-Campus)</td>
+									<td>District Level Refresher course</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">13</th>
+									<td>Umair Latif</td>
+									<td>New Hire</td>
+									<td>CTC,Faisalabad</td>
+									<td>Mr. Ghulam Sarwar,Senior Instructor</td>
+									<td>Long Duration</td>
+									<td>Direct Sub Inspector Training Class</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">14</th>								
+									<td>Umair Latif</td>
+									<td>Promotion Case</td>
+									<td>CTC, Faisalabad</td>
+									<td>Mr. Shafaqat Ali,Junior Instructor</td>
+									<td>Short Duration Course(In-Campus)</td>
+									<td>Re-orientation Course</td>	
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">15</th>								
+									<td>Talha Waheed</td>
+									<td>New Hire</td>
+									<td>RCTI, BWP</td>
+									<td>Muhammad Masood Hussain, Junior Instructor</td>
+									<td>Short Duration Course (Off-Campus)</td>
+									<td>District Level Refresher course</td>
+									<td>
+										<a href="Add_a_New_Trainee.html" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="View_Trainee.html" class="btn-info btn-sm"><i class="fa fa-eye font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th>Name</th>
+									<th>Trainee Type</th>
+									<th>Campus</th>
+									<th>Instructor</th>
+									<th>Course Type</th>
+									<th>Course Name</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+					</table>
+			 
+			
+		</div>
+	</div>
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+		$('#traineeDetails').DataTable();
+		});
+	
+		$(document).ready(function(){
+
+			$('.input-daterange').datepicker({
+			format: 'dd-mm-yyyy',
+			autoclose: true,
+			calendarWeeks : true,
+			clearBtn: true,
+			disableTouchKeyboard: true
+			});
+
+			});
+	
+	</script>
+<script src="../jquery.dataTables.min.js"></script> 
+<script src="../dataTables.bootstrap5.min.js"></script>	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 	
+
+	</body>
+
+</html>

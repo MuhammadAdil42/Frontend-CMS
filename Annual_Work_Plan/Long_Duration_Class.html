@@ -1,0 +1,291 @@
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<!-- Project external CSS file -->
+<link rel="stylesheet" href="../Project-CSS-file/CMS.css">	
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+
+
+	<title>Campus Management System</title>
+	
+	</head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+		
+		<div class="row">
+				
+			<div id="header">
+				<div id="left_menu" class="col-sm-7 float-start">
+					<div id="image_logo" class="float-start">
+					<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+					</div>
+					<div class="float-start">
+						<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+					</div>
+				</div>
+				<div id="right_menu" class=" navbar-light float-end col-sm-5">
+					<div id="userNav">
+					
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							DG ADMIN
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Logout</a></li>
+						  </ul>
+						</li>
+						</ul>
+					</div>
+					<!--<p id="username">DG ADMIN</p> -->
+					<div id="image_user" class="float-end">
+					<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		 
+		<nav class="navbar navbar-light bg-light navbar-expanded-lg">
+			<div class="container-fluid">
+				
+				<div id="menu">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+					  <ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Annual Work Plan
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Long Duration Class</a></li>
+							<li><a class="dropdown-item" href="#">Short Duration Course</a></li>
+							<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+							<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							HR
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">New Post</a></li>
+							<li><a class="dropdown-item" href="#">Filled / Vacant Post</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Trainee Enrolement
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Add a New Trainee</a></li>
+							<li><a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+							<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+							<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Attendance</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Timetable
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Time Table</a></li>
+							<li><a class="dropdown-item" href="#">Tentative Training Programme</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Syllabus
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Direct AR & Inspector syllabus</a></li>
+							<li><a class="dropdown-item" href="#">Promottee AR &Inspector syllabus</a></li>
+							<li><a class="dropdown-item" href="#">Direct sub-inspector syllabus</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Examination
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Date Sheet</a></li>
+							<li><a class="dropdown-item" href="#">Result</a></li>
+							<li><a class="dropdown-item" href="#">Certificate</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Reports
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a tabindex="-1" class="dropdown-item" href="#">Monthly Report</a></li>
+							<li><a tabindex="-1" class="dropdown-item" href="#">Annual Report</a></li>	
+						  </ul>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</nav>
+				</div>
+				
+			</div>
+		</nav>
+		
+			<div id="pageInfo">
+				
+							<div id="pageInfoMainHeading" class="col-sm-3">
+								<p style="color: white;">Campus Management System</p><br><span id="pageInfoSubHeading">Long Duration Classes</span>
+							</div>
+							
+							<div class="col-sm-2"></div>
+							
+							<div id="deptLogo" class="col-sm-6">
+							<img src="../images/cooperative-logo.png" alt="">
+							</div>
+				 </div>
+		 
+		 <div class="clear-floating"></div>
+		 
+		
+		 <div id="Form">
+			<div class="row">
+				 <h3 class="col-lg-12" id="formHeading">Details</h3>
+				 
+				 <div class="col-sm-3">
+					  <label for = "nameOfClass" class= "form-label">Name of Class</label>
+					  <select class="form-select" aria-label="Default select example">
+					  <option selected>Dropdown</option>
+					  <option value="1">Direct sub-inspector Trainee class </option>
+					  <option value="2">Direct AR & Inspector class</option>
+					  <option value="3">Promotee AR & Inspector class</option>
+					 </select>
+				 </div>
+				 
+				 <div class="col-sm-2">
+					 <label for = "Duration" class= "form-label">Duration</label>
+					 <select class="form-select" aria-label="Default select example">
+					  <option selected>Dropdown</option>
+					  <option value="1">6 months </option>
+					  <option value="2">7 months</option>
+					 </select>
+				 </div>
+				 
+				 <div class="col-sm-2">
+					 <label for = "Number of Class" class= "form-label">Number of class</label>
+					 <input class="form-control" type="text" name="numberOfClass" value="01" readonly>
+				</div>
+				
+				<div class="col-sm-3" id="inchargeSelect">
+						  <label for = "nameOfClass" class= "form-label">Incharge Class</label>
+						  <select class="form-select" aria-label="Default select example">
+						  <option selected>Dropdown value get from HR module</option>
+						  <option value="1"></option>
+						  </select>
+				</div>
+				
+				<div class="col-sm-2">
+					 <label for = "Number of participants" class= "form-label">Number of Participants</label>
+					 <input class="form-control" type="number" id="numberOfParticipants" min="1" name="numberOfParticipants">
+				</div>
+		  </div>
+			 
+				 
+				 <div class="row" id="secondRow">
+					 <div class="col-sm-8">
+						 <div class="input-group input-daterange" id="calendarInput">
+							
+						<input type="text" id="start inputCalender" class="form-control text-left mr-2">
+						<label class="ml-3 form-control-placeholder form-label" id="start-p" for="start">Session start date</label>	
+						<span class="fa fa-calendar" id="fa-1"></span>
+						<input type="text" id="end inputCalender" class="form-control text-left ml-2">
+						<label class="ml-3 form-control-placeholder form-label" id="end-p" for="end">Session end date</label>						
+						<span class="fa fa-calendar" id="fa-2"></span> 
+						 </div>
+						</div>
+					 </div>
+					 
+					<div class="row mb-5">
+					<!-- Error div start -->
+						<div class="col-sm-4 mb-1" id="errorCalenderStart">
+							<p id="errorDiv">The start date field is required.</p>
+						</div>
+						<div class="col-sm-4 mb-1" id="errorCalenderEnd">
+							<p id="errorDiv">The end date field is required.</p>
+						</div>
+						 <!-- Error div end -->
+					</div>
+				<div class="row">   
+					<div class="col-md-9">
+						<label for = "Number of Class" class= "form-label">Description</label>
+						<textarea class="form-control" id="descriptionInput"></textarea>
+					</div>
+				</div>
+				
+				<div class="row">
+				  
+					<div class="col-sm-12">
+						<button type="submit" class="form-control btn-primary float-start" id="saveButton" value="save">Save</button>
+						<button type="reset" class="form-control float-start" id="resetButton" value="reset">Clear Form</button>
+					</div>  
+					<div class="float-none"></div>
+				</div>
+			</div>
+		</div>
+	
+		<footer class = "mt-auto">	
+				<div id="footer">
+					<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+				</div>
+		</footer>
+	
+	
+	<script>
+		
+		$(document).ready(function(){
+
+			$('.input-daterange').datepicker({
+			format: 'dd-mm-yyyy',
+			autoclose: true,
+			calendarWeeks : true,
+			clearBtn: true,
+			disableTouchKeyboard: true
+			});
+
+			});
+	
+	</script>
+
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework-->
+
+	</body>
+
+</html>

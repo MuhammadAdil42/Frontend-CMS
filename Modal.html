@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  
+</head>
+
+<style>
+	.padding-0
+	{
+    padding-right:0;
+    padding-left:0;
+	}
+	.paddingLeft
+	{
+		padding-left: 0;
+	}
+	.paddingRight
+	{
+		padding-right:0;
+	}
+	.hyphen
+	{
+		font-size: 20px;
+		font-weight: bold;
+		color: black;
+	}
+</style>
+<body>
+
+  
+  <!-- Trigger the modal with a button -->
+  
+  <a href="" class= " btn-sm btn-success" id="actionItems" data-toggle="modal" data-target="#myModal" target="_self"><i class="fa fa-pencil font12"></i></a>
+
+  		<!-- Modal -->
+	  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			
+				<div class="modal-body">
+					<div class="container-fluid">
+					  <h5>In case of Vacant Post Edit:</h5>
+					  <p class="modalPara">Kindly fill the resource information who has left the job.</p>
+					  <div class="row modalFieldMargin">
+							<div class="col-sm-2">
+							<label for = "Name" class= "form-label">Name</label>
+							</div>
+							<div class="col-sm-8">
+							  <select class="form-select" aria-label="Default select example">
+									<option selected>Dropdown</option>
+									<option value="1">Dummy Value</option>
+									<option value="1">Dummy Value</option>
+							   </select>
+							</div>
+					  </div>
+					  
+					  <div class="row modalFieldMargin">
+						<div class="col-sm-2">
+							<label for = "cnic" class= "form-label paddingRight">CNIC</label>
+						 </div>
+						<div class="col-sm-8">
+							<input class="form-control" type="text" placeholder="12345-1234567-1" id="CNIC" name="CNIC"> <!-- based upon the name, auto-populate this field -->
+						</div>
+					  </div>
+					  
+					  <h5 class="modalFieldMargin" id="filledPostHeading">In case of Filled Post Edit:</h5>
+					  <p class="modalPara">Kindly fill the resource information who is hired.</p>
+					  
+					  <div class="row modalFieldMargin">
+						<div class= "col-sm-2">
+							<label for = "Name" class= "form-label">Name</label>
+						</div>
+						<div class="col-sm-8">
+						<input class="form-control" type="text" id="Name" name="Name"></td>
+						</div>
+					  </div>
+					  
+					  <div class="row modalFieldMargin">
+						 <div class="col-sm-2">
+							<label for = "cnic" class= "form-label paddingRight">CNIC</label>
+						 </div>
+							
+							<div class="col-sm-3">
+								<div class="row">
+									<div class="col-sm-9 paddingRight">
+										<input class="form-control" type="text" placeholder="12345" pattern="[0-9]{5}" id="CNIC" name="CNIC">
+									</div>
+									<div class="col-sm-3 padding-0">
+										<p class="hyphen">-</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="row">
+									<div class="col-sm-9 padding-0">
+										<input class="form-control" type="text" placeholder="1234567" pattern="[0-9]{7}" id="CNIC" name="CNIC">
+									</div>
+									<div class="col-sm-3 padding-0">
+										<p class="hyphen">-</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2 paddingLeft">
+								<input class="form-control" type="text" placeholder="1" pattern="[0-9]{1}" id="CNIC" name="CNIC">
+							</div>
+						</div>
+				
+					</div>
+				</div>
+			
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save changes</button>
+				  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		  </div>
+		  
+		</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

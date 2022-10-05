@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Project external CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+	<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+
+   <title>Campus Management System</title>
+   </head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+		<div class="row">	
+			<div id="header">
+				<div id="left_menu" class="col-sm-7 float-start">
+					<div id="image_logo" class="float-start">
+					<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+					</div>
+					<div class="float-start">
+						<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+					</div>
+				</div>
+				<div id="right_menu" class=" navbar-light float-end col-sm-5">
+					<div id="userNav">
+					
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							DG ADMIN
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Logout</a></li>
+						  </ul>
+						</li>
+						</ul>
+					</div>
+					<!--<p id="username">DG ADMIN</p> -->
+					<div id="image_user" class="float-end">
+					<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-light bg-light navbar-expanded-lg">
+			<div class="container-fluid">
+				
+				<div id="menu">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				  <div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+					  <ul class="navbar-nav">
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Annual Work Plan
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Long Duration Class</a></li>
+							<li><a class="dropdown-item" href="#">Short Duration Course</a></li>
+							<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+							<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							HR
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">New Post</a></li>
+							<li><a class="dropdown-item" href="#">Filled / Vacant Post</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Trainee Enrolement
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Add a New Trainee</a></li>
+							<li><a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+							<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+							<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Attendance</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Timetable
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Time Table</a></li>
+							<li><a class="dropdown-item" href="#">Tentative Training Programme</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Syllabus
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Direct AR & Inspector syllabus</a></li>
+							<li><a class="dropdown-item" href="#">Promottee AR &Inspector syllabus</a></li>
+							<li><a class="dropdown-item" href="#">Direct sub-inspector syllabus</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Examination
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Date Sheet</a></li>
+							<li><a class="dropdown-item" href="#">Result</a></li>
+							<li><a class="dropdown-item" href="#">Certificate</a></li>
+						  </ul>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Reports
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a tabindex="-1" class="dropdown-item" href="#">Monthly Report</a></li>
+							<li><a tabindex="-1" class="dropdown-item" href="#">Annual Report</a></li>	
+						  </ul>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</nav>
+				</div>
+				
+			</div>
+		</nav>
+		
+		<div id="pageInfo">
+				
+			<div id="pageInfoMainHeading" class="col-sm-3">
+				<p style="color: white;">Campus Management System</p><br><span id="pageInfoSubHeading">View Trainee</span>
+			</div>
+							
+			<div class="col-sm-2"></div>
+							
+			<div id="deptLogo" class="col-sm-6">
+				<img src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+	
+		<div id="Form" class="col-lg-12">
+			<div class="row">
+					<div class="col-sm-3">
+						<label for="Name" class="form-label">Name</label>
+						<p class="view-field" id="name">Muhammad Zohaib</p>
+					</div>
+					<div class="col-sm-3">
+						<label for="Name" class="form-label">Father Name</label>
+						<p class="view-field" id="fatherName">Zohaib Ahmad</p>
+					</div>
+					<div class="col-sm-2">
+						<label for = "CNIC No" class= "form-label">CNIC No</label>
+						<p class="view-field" id="cnic">12345-1234567-1</p>
+					</div>
+					<div class="col-sm-2">
+						<label for = "Cell No." class= "form-label">Cell No</label>
+						<p class="view-field" id="cellNo">03xx-xxxxxxx</p>
+					</div>
+					<div class="col-sm-2" id="imagePanel">		
+						<!-- Uploaded image area-->
+						<div class="image-area mt-2">
+							<img id="imageResult" src="../images/userPic.jpeg" alt="">
+						</div>		
+					</div>
+					
+				</div>
+				
+				<div class="row" id="secondRowViewTrainee">
+					<div class="col-sm-3">
+						<label for = "Emergency No." class= "form-label">Emergency No</label>
+						<p class="view-field" id="emergencyNo">03xx-xxxxxxx</p>
+					</div>
+					
+					<div class="col-sm-5">
+						<label for = "Permanent Address" class= "form-label">Permanent Address</label>
+						<p class="view-field" id="permanentAddress">Jorepul,Harbanspura Road,P.O.Tajpura, Lahore</p>
+					</div>
+					
+					<div class="col-sm-2">
+						<label for = "traineeType" class= "form-label">Trainee Type</label>
+						<p class="view-field" id="traineeType">Promotion Case</p>  
+					</div> 
+				</div>
+					
+			  <div id="promotionDiv">	
+					<div class="row mb-5">
+						<div class="col-sm-3">
+							<label for = "Division" class= "form-label">Division</label>
+							<p class="view-field" id="division">Rawalpindi Division</p>
+						</div>
+						
+						<div class="col-sm-2">
+							<label for = "District" class= "form-label">District</label>
+							<p class="view-field" id="district">Chakwal</p>
+						</div>
+						
+						<div class="col-sm-3">
+							<label for="Appointed Office" class="form-label">Appointed Office</label>
+							<p class="view-field" id="appointedOffice">District office Chakwal</p>
+						</div>
+						<div class="col-sm-2">
+							<label for = "Designation" class= "form-label">Designation</label>
+							<p class="view-field" id="designation">Sub-Inspector, Chakwal</p>
+						</div>
+										
+					</div>
+					
+					<div class="row mb-5">
+						
+						<div class="col-sm-3">
+							<label for = "Office PTCL" class= "form-label">Office PTCL</label>
+							<p class="view-field" id="officePtcl">0423-xxxxxxx</p>
+						</div>
+						
+						<div class="col-sm-5">
+							<label for = "Office Address" class= "form-label">Office Address</label>
+							<p class="view-field" id="officeAddress">DR office, Chakwal</p>
+						</div>
+					
+					</div>
+			</div>
+				<div class="row" id="fifthRow">
+					
+					<div class="col-sm-3">
+						<label for = "assignRollNo" class= "form-label">Assign Roll Number</label>
+						<p class="view-field" id="assignRollNo">14</p>			
+					</div>
+					
+					<div class="col-sm-4">
+						<label for = "Campus Allocation" class= "form-label">Campus Allocation</label>
+						<p class="view-field" id="campusAllocation">COOPERATIVE TRAINING COLLEGE, FAISALABAD</p>
+					</div>
+					
+					<div class="col-sm-3">
+						<label for = "Instructor" class= "form-label">Instructor Allocation</label>
+						<p class="view-field" id="instructorAllocation">Mr. Shafaqat Ali Junior Instructor, CTC, FSD</p>
+					</div>
+				</div>
+				
+				<div class="row" id="sixthRow">
+					 <div class="col-sm-3">
+						<label for = "Course Type" class= "form-label">Course Type</label>
+						<p class="view-field" id="courseType">Long Duration Class</p>  
+					 </div>
+					 
+					 <div class="col-sm-4">
+						  <label for = "Course Name" class= "form-label">Course Name</label>
+						  <p class="view-field" id="courseName">Inspectors Training Class(Promottee)</p>
+					 </div>
+				</div>
+				
+		</div>
+	</div>	 
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+
+			
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="../jquery.dataTables.min.js"></script> 
+<script src="../dataTables.bootstrap5.min.js"></script>	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 
+
+	</body>
+
+</html>

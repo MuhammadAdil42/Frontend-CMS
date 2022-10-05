@@ -1,0 +1,696 @@
+	<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Project CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+		<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	
+   <title>Campus Management System</title>
+   </head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+			<div id="header">
+				<div class="row">
+					<div id="left_menu" class="col-sm-7 float-start">
+						<div id="image_logo" class="float-start">
+						<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+						</div>
+						<div class="float-start">
+							<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+						</div>
+					</div>
+					<div id="right_menu" class=" navbar-light float-end col-sm-5">
+						<div id="userNav">
+						
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								DG ADMIN
+							  </a>
+							  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Profile</a></li>
+								<li><a class="dropdown-item" href="#">Settings</a></li>
+								<li><a class="dropdown-item" href="#">Logout</a></li>
+							  </ul>
+							</li>
+							</ul>
+						</div>
+						<!--<p id="username">DG ADMIN</p> -->
+						<div id="image_user" class="float-end">
+						<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+			  <ul class="navbar-nav">
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Annual Work Plan</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Long Duration Class</a></li>
+					<li> <a class="dropdown-item" href="#">Short Duration Course</a></li>
+					<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+					<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HR</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">New Post</a></li>
+					<li> <a class="dropdown-item" href="#">Filled/Vacant Post</a></li>		
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trainee Enrolement</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Add a New Trainee</a></li>
+					<li> <a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+					<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+					<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">Attendance</a></li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Timetable</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Timetable &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Timetable</a></li>
+						<li><a class="dropdown-item" href="#">View Timetable</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Tentative Training Programme &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Tentative Training Programme</a></li>
+						<li><a class="dropdown-item" href="#">View Tentative Training Programme</a></li>
+						</ul>
+					</li>					
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Syllabus</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Direct AR & Inspector Syllabus</a></li>
+					<li> <a class="dropdown-item" href="#">Promottee AR & Inspector Syllabus</a></li>
+					<li><a class="dropdown-item" href="#">Direct Sub-Inspector Syllabus</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Examination</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Datesheet &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Datesheet</a></li>
+						<li><a class="dropdown-item" href="#">View Datesheet</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Result &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Upload Result</a></li>
+						<li><a class="dropdown-item" href="#">View Result</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Certificate &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Certificate</a></li>
+						<li><a class="dropdown-item" href="#">Download Certifictae</a></li>
+						</ul>
+					</li>	
+						
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Reports</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Monthly Report</a></li>
+					<li> <a class="dropdown-item" href="#">Annual Report</a></li>
+				  </ul>
+				</li>
+				
+			  </ul>
+			</div>
+			<!-- navbar-collapse.// -->
+			</div>
+			<!-- container-fluid.// -->
+		</nav>
+		
+		<div id="pageInfo">				
+			<div id="deptLogo" class="col-sm-4">
+				<img id="logoImg" src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+	
+		<div id="Form" class="col-lg-12">
+			
+			<div class="row" id="searchFilters">
+				<div class="col-sm-3">
+					<label for = "Result of" class= "form-label">Result of</label>
+					<select class="form-select" id="">
+						<option selected>Dropdown</option>
+						<option value="1">Include all Long classes of current year</option>
+					</select>
+				</div>
+				
+				<div class="col-sm-3">
+					<label for = "Examination held" class= "form-label">Examination held at</label>
+					<select class="form-select" id="">
+						<option selected>auto-populated</option>
+					</select>
+				</div>
+				<div class="col-sm-3">
+					<label for = "year" class= "form-label">Date From:</label>
+					<input class= "form-control" type="month" id="">   				
+				</div>
+				<div class="col-sm-3">
+					<label for = "year" class= "form-label">Date To:</label>
+					<input class= "form-control" type="month" id="">   				
+				</div>
+			</div>
+				
+			<div class="row mt-5" id="searchControls">
+				<div class="col-sm-2 col-md-2 col-lg-1 d-grid gap-2">
+					<button type="submit" class="form-control btn-success float-end" id="saveButtonViewResult" value="save">Search</button>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 d-grid gap-2">
+					<button type="reset" class="form-control btn-default float-end hoverColor" id="resetButtonViewResult" value="reset">Reset</button>
+				</div>
+			</div>	
+			
+			<div class="row mb-3" id="buttonRow">
+				<div class="col-sm-12">
+					<button type="submit" onClick="window.print()" class="form-control btn-primary text-nowrap col-sm-2 col-md-1 float-end" id="printButton" value="print">Print</button>
+				</div>
+			</div>
+			
+			<div class="row mb-3">
+				<h5 class="form-abel">
+					FOLLOWING REGULAR TRAINEES PASSED FINALLY:
+				</h5>
+			</div>
+			
+			<div class="row mb-4">
+				<table id="regularTraineesTable" class="table table-bordered mt-3" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th>Position</th>
+									<th>Name of Trainees</th>
+									<th>Father's Name</th>
+									<th>District</th>
+									<th>Marks Obtained</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<td>Stands 1st</td>
+									<td>Uzair Ahmad Saroya</td>
+									<td>Muhammad Afzal Saroya</td>
+									<td>Sheikhupura</td>
+									<td>539</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<th scope ="row">2</th>
+									<td>Stands 2nd</td>
+									<td>Atif Rauf</td>
+									<td>Ch. Abdul Rauf</td>
+									<td>Layyah</td>
+									<td>521</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">3</th>
+									<td>Stands 3rd</td>
+									<td>Usman Hassan</td>
+									<td>Mukhtar Ahmed</td>
+									<td>M.B.Din</td>
+									<td>515</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">4</th>
+									<td></td>
+									<td>Zaid Hassan</td>
+									<td>Muhammad Ikram</td>
+									<td>Layyah</td>
+									<td>507</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">5</th>
+									<td></td>
+									<td>Farhan Haider</td>
+									<td>Allah Wadhaia</td>
+									<td>Chakwal</td>
+									<td>500</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">6</th>	
+									<td></td>
+									<td>Ali Zain</td>
+									<td>Syed Fazal Abbas Shah</td>
+									<td>Faisalabad</td>
+									<td>449</td>									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">7</th>
+									<td></td>
+									<td>Ahmed Awais khawaja</td>
+									<td>KH.Mahfooz-Ul-Hannan</td>
+									<td>Lahore</td>
+									<td>494</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">8</th>
+									<td></td>
+									<td>Farukh Hayat</td>
+									<td>Umar Hayat</td>
+									<td>Sargodha</td>
+									<td>441</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">9</th>
+									<td></td>
+									<td>Zaid Hassan</td>
+									<td>Muhammad Ikram</td>
+									<td>Layyah</td>
+									<td>507</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">10</th>
+									<td></td>
+									<td>Farhan Haider</td>
+									<td>Allah Wadhaia</td>
+									<td>Chakwal</td>
+									<td>500</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">11</th>	
+									<td></td>
+									<td>Ali Zain</td>
+									<td>Syed Fazal Abbas Shah</td>
+									<td>Faisalabad</td>
+									<td>449</td>									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">12</th>
+									<td></td>
+									<td>Ahmed Awais khawaja</td>
+									<td>KH.Mahfooz-Ul-Hannan</td>
+									<td>Lahore</td>
+									<td>494</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">13</th>
+									<td></td>
+									<td>Farukh Hayat</td>
+									<td>Umar Hayat</td>
+									<td>Sargodha</td>
+									<td>441</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th>Position</th>
+									<th>Name of Trainees</th>
+									<th>Father's Name</th>
+									<th>District</th>
+									<th>Marks Obtained</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+					</table>
+				</div>	
+				
+				<div class="row mb-3">
+					<h5 class="form-label">PRIVATE CANDIDATES:</h5>
+				</div>
+				
+				<div class="row mb-4">
+					<table id="privateCandidates" class="table table-bordered" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th>Position</th>
+									<th>Name of Trainees</th>
+									<th>Father's Name</th>
+									<th>District</th>
+									<th>Marks Obtained</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<td></td>
+									<td>Ajilla Liaquat</td>
+									<td>Liaquat Ali</td>
+									<td>Bahawalpur</td>
+									<td>461</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">2</th>
+									<td></td>
+									<td>Ajilla Liaquat</td>
+									<td>Liaquat Ali</td>
+									<td>Bahawalpur</td>
+									<td>461</td>									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">3</th>
+									<td></td>
+									<td>Ajilla Liaquat</td>
+									<td>Liaquat Ali</td>
+									<td>Bahawalpur</td>
+									<td>461</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>								
+								
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th>Position</th>
+									<th>Name of Trainees</th>
+									<th>Father's Name</th>
+									<th>District</th>
+									<th>Marks Obtained</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+					</table>
+				</div>
+				
+				<div class="row mb-3">
+					<h5 class="form-label">THE TRAINEE FAILED IN THE SUBJECT NOTED AGAINST EACH:</h5>
+				</div>
+				
+				<div class="row mb-4">
+					<table id="failedCandidates" class="table table-bordered" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th>Name of Trainees</th>
+									<th>Father's Name</th>
+									<th>District</th>
+									<th>Remarks</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<td>Muhammad Mazhar Jamil</td>
+									<td>Jamil Ahmed</td>
+									<td>Faisalabad</td>
+									<td>Absent, therefore, Failed in Coop: Law & Practice: CDC-01 Only</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>								
+								
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th>Name of Trainees</th>
+									<th>Father's Name</th>
+									<th>District</th>
+									<th>Remarks</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+					</table>
+				</div>
+				
+				<div class="row mb-3">
+					<h5 class="form-label">PASS PERCENTAGE/ABSTRACT:</h5>
+				</div>
+				
+				<div class="row mb-4">
+					<table id="abstractTable" class="table table-bordered" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th></th>
+									<th>REGULAR</th>
+									<th>PRIVATE</th>
+									<th>TOTAL</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<th>No. of Trainees appeared</th>
+									<td>41</td>
+									<td>01</td>
+									<td>42</td>
+								</tr>
+								<tr>
+									<th scope ="row">2</th>
+									<th>No. of Trainees passed</th>
+									<td>40</td>
+									<td>01</td>
+									<td>41</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">3</th>
+									<th>Pass percentage</th>
+									<td>95.65%</td>
+									<td>100%</td>
+									<td>97.36%</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th></th>
+									<th>REGULAR</th>
+									<th>PRIVATE</th>
+									<th>TOTAL</th>
+								</tr>
+							</tfoot>
+					</table>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3">
+						<label for="Total Marks" class="form-label">Total Marks</label>
+						<input class="form-control" readonly value='720'></input>
+					</div>
+					<div class="col-sm-3">
+						<label for="Pass Marks" class="form-label">Pass Marks</label>
+						<input class="form-control" readonly value='40%'></input>
+					</div>
+					<div class="col-sm-3">
+						<label for="Compiled By" class="form-label">Compiled By</label>
+						<textarea class="form-control" readonly>Mr. Abdul Majeed, Assistant,Cooperative Training College, Faisalabad</textarea>
+					</div>
+					<div class="col-sm-3">
+						<label for="Checked By" class="form-label">Checked By</label>
+						<textarea class="form-control" readonly>1. Mr. Ghulam Sarwar, Instructor,CTC, Faisalabad &#013;&#010; 2. Mr. Shafaqat Ali, Junior Instructor, CTC, Faisalabad</textarea>
+					</div>
+				</div>
+				
+				<div class="row mt-4">
+					<div class="col-sm-3">
+						<label for="Attested By" class="form-label">Attested By</label>
+						<textarea class="form-control" readonly>(Muhammad Jamil Gathewala) Principal, Cooperative Training College, Faisalabad</textarea>
+					</div>
+					<div class="col-sm-3">
+						<label for="Approved  By" class="form-label">Approved  By</label>
+						<textarea class="form-control" readonly>Registrar, Cooperative Societies, Punjab, Lahore</textarea>
+					</div>
+				</div>
+				
+				<div class="row mt-5">
+					<div class=" col-sm-12">
+						<!-- Uploaded image area-->
+						<div class="uploadAreaViewResult mt-4 float-end"><img id="uploadResult" src="../images/signature.png" alt="" class="sigImage"></div>		
+					</div>
+			</div>
+								
+		</div>
+	</div>	
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			// make it as accordion for smaller screens
+			if (window.innerWidth < 992) {
+
+			  // close all inner dropdowns when parent is closed
+			  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+				everydropdown.addEventListener('hidden.bs.dropdown', function () {
+				  // after dropdown is hidden, then find all submenus
+					this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+					  // hide every submenu as well
+					  everysubmenu.style.display = 'none';
+					});
+				})
+			  });
+
+			  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+				element.addEventListener('click', function (e) {
+					let nextEl = this.nextElementSibling;
+					if(nextEl && nextEl.classList.contains('submenu')) {	
+					  // prevent opening link if link needs to open dropdown
+					  e.preventDefault();
+					  if(nextEl.style.display == 'block'){
+						nextEl.style.display = 'none';
+					  } else {
+						nextEl.style.display = 'block';
+					  }
+
+					}
+				});
+			  })
+			}
+			// end if innerWidth
+			});
+			
+				
+		$(document).ready(function()
+		{
+		
+		$('#regularTraineesTable').DataTable();
+		$('#privateCandidates').DataTable();
+		$('#failedCandidates').DataTable();
+		$('#abstractTable').DataTable();
+		});
+		
+		$('textarea').each(function () {
+			this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+		}).on('input', function () {
+			this.style.height = 'auto';
+			this.style.height = (this.scrollHeight) + 'px';
+		});
+		
+	</script>
+
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="../jquery.dataTables.min.js"></script> 
+<script src="../dataTables.bootstrap5.min.js"></script>	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 
+
+	</body>
+
+</html>

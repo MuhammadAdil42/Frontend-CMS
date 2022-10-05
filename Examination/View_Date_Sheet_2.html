@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Project CSS file -->
+	<link rel="stylesheet" href="../Project-CSS-file/CMS.css">
+	
+		<!--font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap 5.1.3 CSS -->
+	<link href ="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel ="stylesheet">
+	
+	<link href ="../dataTables.bootstrap5.min.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	
+   <title>Campus Management System</title>
+   </head>
+
+	<body class="d-flex flex-column min-vh-100 main">
+	
+	<div class="container-fluid">
+			<div id="header">
+				<div class="row">
+					<div id="left_menu" class="col-sm-7 float-start">
+						<div id="image_logo" class="float-start">
+						<img src="../images/Govt_punjab_logo.jpg" alt="" width="64" height="50">
+						</div>
+						<div class="float-start">
+							<p id="main_heading">CAMPUS MANAGEMENT SYSTEM <br> <span id= "sub_heading">Govt. of the Punjab</span></p>
+						</div>
+					</div>
+					<div id="right_menu" class=" navbar-light float-end col-sm-5">
+						<div id="userNav">
+						
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+							  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								DG ADMIN
+							  </a>
+							  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Profile</a></li>
+								<li><a class="dropdown-item" href="#">Settings</a></li>
+								<li><a class="dropdown-item" href="#">Logout</a></li>
+							  </ul>
+							</li>
+							</ul>
+						</div>
+						<!--<p id="username">DG ADMIN</p> -->
+						<div id="image_user" class="float-end">
+						<img src="../images/userPic.jpeg" alt="" id="imageSignIn" width="50" height="50">
+						</div>
+					</div>
+			</div>
+		</div>
+		
+		<div class="clear_floating"></div>
+		 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+			  <ul class="navbar-nav">
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Annual Work Plan</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Long Duration Class</a></li>
+					<li> <a class="dropdown-item" href="#">Short Duration Course</a></li>
+					<li><a class="dropdown-item" href="#">Detailed Annual Work Plan</a></li>
+					<li><a class="dropdown-item" href="#">Approved Annual Work Plan</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">HR</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">New Post</a></li>
+					<li> <a class="dropdown-item" href="#">Filled/Vacant Post</a></li>		
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Trainee Enrolement</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Add a New Trainee</a></li>
+					<li> <a class="dropdown-item" href="#">Nominate a Trainee</a></li>
+					<li><a class="dropdown-item" href="#">Trainee Details</a></li>
+					<li><a class="dropdown-item" href="#">Nominee Details</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item"><a class="nav-link" href="#">Attendance</a></li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Timetable</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Timetable &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Timetable</a></li>
+						<li><a class="dropdown-item" href="#">View Timetable</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Tentative Training Programme &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Tentative Training Programme</a></li>
+						<li><a class="dropdown-item" href="#">View Tentative Training Programme</a></li>
+						</ul>
+					</li>					
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Syllabus</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Direct AR & Inspector Syllabus</a></li>
+					<li> <a class="dropdown-item" href="#">Promottee AR & Inspector Syllabus</a></li>
+					<li><a class="dropdown-item" href="#">Direct Sub-Inspector Syllabus</a></li>
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Examination</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Datesheet &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Datesheet</a></li>
+						<li><a class="dropdown-item" href="#">View Datesheet</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Result &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Upload Result</a></li>
+						<li><a class="dropdown-item" href="#">View Result</a></li>
+						</ul>
+					</li>
+					
+					<li> <a class="dropdown-item" href="#">Certificate &raquo; </a>
+					  <ul class="submenu dropdown-menu">
+						<li><a class="dropdown-item" href="#">Design Certificate</a></li>
+						<li><a class="dropdown-item" href="#">Download Certifictae</a></li>
+						</ul>
+					</li>	
+						
+				  </ul>
+				</li>
+				
+				<li class="nav-item dropdown" id="myDropdown">
+				  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Reports</a>
+				  <ul class="dropdown-menu">
+					<li> <a class="dropdown-item" href="#">Monthly Report</a></li>
+					<li> <a class="dropdown-item" href="#">Annual Report</a></li>
+				  </ul>
+				</li>
+				
+			  </ul>
+			</div>
+			<!-- navbar-collapse.// -->
+			</div>
+			<!-- container-fluid.// -->
+		</nav>
+		
+		<div id="pageInfo">				
+			<div id="deptLogo" class="col-sm-4">
+				<img id="logoImg" src="../images/cooperative-logo.png" alt="">
+			</div>
+		</div>
+		
+		 <div class="clear-floating"></div>
+		 
+	
+		<div id="Form" class="col-lg-12">
+			
+			<div class="row">
+				<h5 class="form-label" id="WP_heading">DATE SHEET OF FINAL EXAMINATION OF THE INSPECTORS TRAINING CLASS UNDER “DIPLOMA IN COMMUNITY DEVELOPMENT THROUGH COOPERATIVES” 
+					(SESSION 12.10.2020 TO 11.04.2021) TO BE HELD IN JULY, 2021
+				</h5>
+			</div>	
+			
+			<div class="row mb-3" id="buttonRow">
+				<div class="col-sm-12">
+					<button type="submit" onClick="window.print()" class="form-control btn-primary text-nowrap col-sm-2 col-md-1 float-end" id="printButton" value="print">Print</button>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<table id="examDateSheet" class="table table-bordered mt-3" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th>Date</th>
+									<th>Days</th>
+									<th>Time</th>
+									<th>Subject</th>
+									<th>Code</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<td>27.07.2021</td>
+									<td>Tuesday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Law and Practice</td>
+									<td>CDC-01</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<th scope ="row">2</th>
+									<td>28.07.2021</td>
+									<td>Wednesday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Cooperatives Management</td>
+									<td>CDC-02</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">3</th>
+									<td>29.07.2021</td>
+									<td>Thursday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Rural/ Community Development</td>
+									<td>CDC-03</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">4</th>
+									<td>30.07.2021</td>
+									<td>Friday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Office Management  Skills</td>
+									<td>CDC-04</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">5</th>
+									<td>31.07.2021</td>
+									<td>Saturday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Accounting and Cooperative Book Keeping</td>
+									<td>CDC-05</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">6</th>	
+									<td>01.08.2021</td>
+									<td>Sunday</td>
+									<td>Holiday</td>
+									<td>Holiday</td>
+									<td></td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+									
+								<tr>
+									<th scope ="row">7</th>
+									<td>02.08.2021</td>
+									<td>Monday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Agricultural Economics and Business management</td>
+									<td>CDC-06</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">8</th>
+									<td>03.08.2021</td>
+									<td>Tuesday</td>
+									<td>9:30 am to 12:30 pm</td>
+									<td>Agriculture ( Crops and Livestock)</td>
+									<td>CDC-07</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th>Date</th>
+									<th>Days</th>
+									<th>Time</th>
+									<th>Subject</th>
+									<th>Code</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+					</table>
+				</div>	
+				
+				<div class="row">
+					<h5 class="form-label" id="WP_heading">PRACTICALS</h5>
+				</div>
+				
+				<div class="row mb-4">
+					<table id="practicalDateSheet" class="table table-bordered mt-5" style="width:100%">
+							<thead>
+								<tr>
+									<th>Sr#</th>
+									<th>Date</th>
+									<th>Days</th>
+									<th>Time</th>
+									<th>Subject</th>
+									<th>Code</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope ="row">1</th>
+									<td>04.08.2021</td>
+									<td>Wednesday</td>
+									<td>10:00 am to 12:00 pm</td>
+									<td>Rural/ Community Development</td>
+									<td>CDC-03</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope ="row">2</th>
+									<td>05.08.2021</td>
+									<td>Thursday</td>
+									<td>10:00 am to 12:00 pm</td>
+									<td>Office Management Skills</td>
+									<td>CDC-04</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>
+							
+								<tr>
+									<th scope ="row">3</th>
+									<td>06.08.2021</td>
+									<td>Friday</td>
+									<td>10:00 am to 12:00 pm</td>
+									<td>Agriculture ( Crops and Livestock)</td>
+									<td>CDC-07</td>
+									<td>
+										<a href="" class="btn-success btn-sm"><i class="fa fa-pencil font12"></i></a>
+										<a href="#" class="btn-danger btn-sm"><i class="fa fa-trash font12"></i></a>
+									</td>
+								</tr>								
+								
+							</tbody>
+							<tfoot>
+								<tr>
+									<th>Sr#</th>
+									<th>Date</th>
+									<th>Days</th>
+									<th>Time</th>
+									<th>Subject</th>
+									<th>Code</th>
+									<th>Action</th>
+								</tr>
+							</tfoot>
+					</table>
+				</div>
+				<div class="row">
+					<p id="timetableNote"><span style="font-weight:bold; font-size:20px;">Note:</span> <br> 1. The trainees are allowed preparatory days from 25.07.2021 to 26.07.2021, but they are not allowed to leave the college campus.
+<br> 2.	The regular trainees should deposit Rs.300/- as examination fee. The amount of fine will also be deposited by the trainees before 26.07.2021.
+<br> 3.	The trainees who fail to produce the clearance chit issued by the Assistant Accounts of this college will not be allowed entry in the examination hall.
+<br> 4.	The private candidates should deposit Rs.300/- as examination fee and also deposit 
+Rs.200/- towards college Welfare Fund before commencement of their paper/Exam with the Office Assistant Accounts against proper receipt.      
+
+					</p>	
+				</div>
+				
+								
+		</div>
+	</div>	
+	
+	<footer class = "mt-auto">	
+		<div id="footer">
+			<p id="footerText">Campus Management System Punjab &copy; All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			// make it as accordion for smaller screens
+			if (window.innerWidth < 992) {
+
+			  // close all inner dropdowns when parent is closed
+			  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+				everydropdown.addEventListener('hidden.bs.dropdown', function () {
+				  // after dropdown is hidden, then find all submenus
+					this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+					  // hide every submenu as well
+					  everysubmenu.style.display = 'none';
+					});
+				})
+			  });
+
+			  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+				element.addEventListener('click', function (e) {
+					let nextEl = this.nextElementSibling;
+					if(nextEl && nextEl.classList.contains('submenu')) {	
+					  // prevent opening link if link needs to open dropdown
+					  e.preventDefault();
+					  if(nextEl.style.display == 'block'){
+						nextEl.style.display = 'none';
+					  } else {
+						nextEl.style.display = 'block';
+					  }
+
+					}
+				});
+			  })
+			}
+			// end if innerWidth
+			});
+			
+		$(document).ready(function()
+		{
+		
+		$('#examDateSheet').DataTable();
+		$('#practicalDateSheet').DataTable();
+		});
+	</script>
+
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="../jquery.dataTables.min.js"></script> 
+<script src="../dataTables.bootstrap5.min.js"></script>	
+<script src ="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"> </script> <!-- Bootstrap framework--> 
+
+	</body>
+
+</html>
