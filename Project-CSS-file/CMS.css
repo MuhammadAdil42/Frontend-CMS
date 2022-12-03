@@ -554,7 +554,7 @@
 	    #officePtcl, #officeAddress, #assignRollNo,
     	#instructorAllocation, #nameOfUser, #email,
 		#password, #dated, #shortCourseLabel, #totalTrainees,
-		#higherUp
+		#higherUp, #lectureNo, #subjectName
 		{
 			color: black;
 			font-weight: bold;
@@ -1481,4 +1481,9 @@ input:invalid
 input[id="report"]
 {
 	display: block;
+}
+.line
+{	
+	background-color: white;
+	border-top: 3px dashed green  !important;
 }
