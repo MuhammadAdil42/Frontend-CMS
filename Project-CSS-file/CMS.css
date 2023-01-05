@@ -554,10 +554,17 @@
 	    #officePtcl, #officeAddress, #assignRollNo,
     	#instructorAllocation, #nameOfUser, #email,
 		#password, #dated, #shortCourseLabel, #totalTrainees,
-		#higherUp, #lectureNo, #subjectName
+		#higherUp, #lectureNo, #subjectName, #monthView,
+		#renderView, #tDomesticView, #studyView, 
+		#facultyView, #festivalView, #sportView,
+		#studyShortView, #facultyShortView
 		{
 			color: black;
 			font-weight: bold;
+		}
+		.color
+		{
+			color: black;
 		}
 		#desInputViewLongDuration
 		{
@@ -1486,4 +1493,13 @@ input[id="report"]
 {	
 	background-color: white;
 	border-top: 3px dashed green  !important;
+}
+#saveRecord
+{
+	width:100px;
+}
+.labelMonthlyReport
+{
+	font-weight: bold;
+	font-size: 17px;
 }
